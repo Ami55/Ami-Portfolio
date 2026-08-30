@@ -7,7 +7,7 @@ export const metadata={title:"SEO App Library; Ami Saeednia",description:"A grow
 export default function AppsPage(){return <main>
   <header className="nav wrap">
     <Link className="logo" href="/">SEO<span>Girl</span></Link>
-    <nav><Link href="/">Portfolio</Link><Link href="/about">About</Link></nav>
+    <nav><Link href="/">Portfolio</Link><Link href="/blog">Insights</Link><Link href="/about">About</Link></nav>
   </header>
   <section className="libraryHero wrap">
     <div className="status"><i/> SEO STRATEGY × AI PRODUCT LAB</div>

@@ -22,7 +22,7 @@ const strengths=[
 ];
 
 export default function AboutPage(){return <main>
-  <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><nav><Link href="/">Portfolio</Link><Link href="/apps">Tools</Link></nav></header>
+  <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><nav><Link href="/">Portfolio</Link><Link href="/apps">Tools</Link><Link href="/blog">Insights</Link></nav></header>
   <section className="aboutHero wrap">
     <figure className="aboutPortrait aboutPortraitBw"><img src="/ami-saeednia-profile-bw.png" alt="Ami Saeednia, SEO and GEO Strategist"/></figure>
     <div className="aboutHeroHeading"><span className="status"><i/> ABOUT AMI SAEEDNIA</span><h1 className="helloTitle"><span className="helloLead">Hello, I’m</span><img className="signatureName signatureArtwork" src="/ami-signature.png" alt="Ami Saeednia"/></h1><p className="heroRole">SEO / GEO Strategist · Search systems · AI visibility</p></div>
