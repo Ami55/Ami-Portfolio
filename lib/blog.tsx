@@ -86,7 +86,7 @@ export function getAllPosts(): BlogPost[] {
       body,
       headings,
     };
-  });
+  }).sort((a, b) => b.number - a.number);
 }
 
 export function getPost(slug: string) {
