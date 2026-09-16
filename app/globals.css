@@ -195,3 +195,16 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
 .blogCta a{transition:background-color .2s ease,border-color .2s ease,transform .2s ease}
 .blogCta a:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.38);transform:translateY(-2px)}
 @media(max-width:580px){.blogCta{padding:48px 0 64px}.blogCta>.wrap{width:calc(100% - 28px);padding:48px 25px;border-radius:24px}.blogCta h2{font-size:40px}}
+
+/* Compact selected-build cards: the full library remains unchanged. */
+.featured .featuredGrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.featured .productCard{padding:16px;border-radius:18px}
+.featured .productTop{gap:12px;font-size:9px}
+.featured .productTop span:last-child{text-align:right}
+.featured .productVisual.appPreview{margin:15px 0 18px;border-radius:11px}
+.featured .productCard h3{min-height:0;margin:0 0 10px;font-size:20px;line-height:1.12}
+.featured .productCard>p{min-height:0;margin:0 0 18px;font-size:13px;line-height:1.55}
+.featured .productCard>ul{display:none}
+.featured .productCard>a:last-child{padding-top:14px;font-size:12px}
+@media(max-width:1050px){.featured .featuredGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.featured .featuredGrid{grid-template-columns:1fr}.featured .productCard{display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:15px;align-items:start}.featured .productTop{grid-column:1/-1}.featured .productVisual.appPreview{grid-column:1;grid-row:2/5;margin:15px 0 0;aspect-ratio:4/3}.featured .productCard h3{grid-column:2;margin-top:15px;font-size:18px}.featured .productCard>p{grid-column:2;margin-bottom:12px;font-size:12px}.featured .productCard>a:last-child{grid-column:2}}
