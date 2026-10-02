@@ -1,6 +1,6 @@
 ---
 title: What Happens When Your Best Paragraph Loses Its Context?
-status: draft
+status: published
 publishedDate: 2026-10-01
 metaTitle: 'Context Loss in AI Retrieval: Writing Clearer Passages'
 description: >-
