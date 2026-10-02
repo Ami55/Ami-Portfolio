@@ -1,6 +1,6 @@
 ---
 title: Did My Content Change Improve AI Visibility—or Did the Answer Just Change?
-status: draft
+status: published
 publishedDate: 2026-10-01
 metaTitle: Did Your Content Update Improve AI Visibility?
 description: >-
