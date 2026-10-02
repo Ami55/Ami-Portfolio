@@ -1,7 +1,7 @@
 ---
 title: 'Beyond BM25 vs. Vectors: Why Retrieval Often Needs More Than One Method'
-status: draft
-publishedDate: 2026-10-01
+status: published
+publishedDate: 2026-10-26
 metaTitle: 'Hybrid Retrieval: BM25, Vectors, and Reranking Explained'
 description: >-
   Why lexical search, vector retrieval, and reranking can work together—and how
