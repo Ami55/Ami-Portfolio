@@ -1,7 +1,7 @@
 ---
 title: What Happens When Your Best Paragraph Loses Its Context?
 status: published
-publishedDate: 2026-10-01
+publishedDate: 2026-09-29
 metaTitle: 'Context Loss in AI Retrieval: Writing Clearer Passages'
 description: >-
   A useful paragraph can become unclear when separated from its page. How I
