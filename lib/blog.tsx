@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { ReactNode } from "react";
+import { parse as parseYaml } from "yaml";
 
 export type BlogPost = {
   number: number;
@@ -19,74 +20,45 @@ export type BlogPost = {
 
 const blogDir = path.join(process.cwd(), "content", "blog");
 
-function cleanValue(value = "") {
-  return value.replace(/\s*\([^)]*chars?\)\s*$/i, "").trim();
-}
-
-function editorialTitle(value: string) {
-  const lowercaseWords = new Set([
-    "a", "an", "and", "as", "at", "be", "been", "but", "by", "can", "cannot",
-    "could", "did", "do", "does", "for", "from", "had", "has", "have", "in",
-    "into", "is", "isn't", "isn’t", "it", "its", "nor", "of", "on", "or", "should",
-    "the", "to", "vs", "was", "were", "will", "with", "without", "would",
-  ]);
-  return value.split(/\s+/).map((word, index) => {
-    if (index === 0) return word;
-    const bare = word.replace(/^[^\p{L}]+|[^\p{L}’']+$/gu, "").toLocaleLowerCase("en");
-    if (!lowercaseWords.has(bare)) return word;
-    return word.replace(bare, bare).replace(new RegExp(bare, "i"), bare);
-  }).join(" ");
-}
-
-function publicationDate(number: number) {
-  const date = new Date(Date.UTC(2026, 0, 9 + Math.max(0, number - 1) * 4));
-  return {
-    dateISO: date.toISOString().slice(0, 10),
-    date: new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(date),
-  };
-}
-
-function categoryFor(title: string) {
-  const value = title.toLowerCase();
-  if (value.includes("sitemap")) return "TECHNICAL SEO";
-  if (value.includes("e-e-a-t") || value.includes("eeat")) return "E-E-A-T";
-  if (value.includes("nlp") || value.includes("sentiment") || value.includes("part-of-speech") || value.includes("named entity")) return "NLP";
-  if (value.includes("knowledge graph") || value.includes("entity") || value.includes("semantic triple")) return "ENTITY SEO";
-  if (value.includes("query") || value.includes("llm") || value.includes("rag") || value.includes("ai search") || value.includes("citation")) return "AI VISIBILITY";
-  return "SEMANTIC SEO";
-}
-
 function slugify(value: string) {
   return value.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
 export function getAllPosts(): BlogPost[] {
-  return fs.readdirSync(blogDir).filter((file) => file.endsWith(".md")).sort().map((file) => {
+  const posts = fs.readdirSync(blogDir).filter((file) => file.endsWith(".md")).map((file) => {
     const raw = fs.readFileSync(path.join(blogDir, file), "utf8");
-    const [, frontmatter = "", markdown = raw] = raw.split(/^---\s*$/m);
-    const fields = Object.fromEntries(frontmatter.split("\n").map((line) => {
-      const index = line.indexOf(":");
-      return index > -1 ? [line.slice(0, index).trim(), line.slice(index + 1).trim()] : [line, ""];
-    }));
-    const title = editorialTitle(cleanValue(fields["Title (H1)"] || markdown.match(/^#\s+(.+)$/m)?.[1] || file));
-    const body = markdown.replace(/^\s*#\s+.+(?:\r?\n)+/, "").trim();
-    const slug = (fields["URL Slug"] || `/${file.replace(/^\d+-|\.md$/g, "")}/`).replace(/^\//, "").replace(/\/$/, "");
-    const headings = [...body.matchAll(/^##\s+(.+)$/gm)].map((match) => ({ text: match[1], id: slugify(match[1]) }));
-    const number = Number((fields.Post || "0").match(/\d+/)?.[0] || 0);
+    const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)([\s\S]*)$/);
+    if (!match) throw new Error(`Missing blog metadata: ${file}`);
+    const fields = parseYaml(match[1]);
+    if (fields.status !== "published") return null;
+    const slug = file.slice(0, -3);
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error(`Invalid blog URL: ${file}`);
+    const dateISO = String(fields.publishedDate || "");
+    const date = new Date(`${dateISO}T00:00:00Z`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dateISO) || !Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== dateISO) {
+      throw new Error(`Invalid publication date: ${file}`);
+    }
+    const title = String(fields.title || "").trim();
+    const description = String(fields.description || "").trim();
+    if (!title || !description) throw new Error(`Missing title or description: ${file}`);
+    const body = match[2].trim();
     return {
-      number,
+      number: 0,
       title,
-      metaTitle: cleanValue(fields["Meta Title"] || title),
-      description: cleanValue(fields["Meta Description"] || "Practical SEO research and analysis by Ami Saeednia."),
+      metaTitle: String(fields.metaTitle || title),
+      description,
       slug,
-      targetQuery: fields["Target Query"] || "SEO strategy",
-      wordCount: Number((fields["Word Count"] || "0").replace(/\D/g, "")) || body.split(/\s+/).length,
-      category: fields["Category"] || categoryFor(title),
-      ...publicationDate(number),
+      targetQuery: String(fields.targetQuery || "SEO strategy"),
+      wordCount: Number(fields.wordCount) || body.split(/\s+/).length,
+      category: String(fields.category || "SEMANTIC SEO"),
+      dateISO,
+      date: new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(date),
       body,
-      headings,
+      headings: [...body.matchAll(/^##\s+(.+)$/gm)].map((match) => ({ text: match[1], id: slugify(match[1]) })),
     };
-  }).sort((a, b) => b.number - a.number);
+  }).filter((post): post is BlogPost => post !== null)
+    .sort((a, b) => b.dateISO.localeCompare(a.dateISO) || a.slug.localeCompare(b.slug));
+  return posts.map((post, index) => ({ ...post, number: posts.length - index }));
 }
 
 export function getPost(slug: string) {
