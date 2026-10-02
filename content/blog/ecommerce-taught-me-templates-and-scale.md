@@ -33,4 +33,3 @@ Use meaningful product attributes, varied but controlled structures, and editori
 
 **What should be tested before a template release?**
 Test representative categories, edge cases, canonicals, metadata, structured data, rendering, performance, internal links, and analytics.
-
