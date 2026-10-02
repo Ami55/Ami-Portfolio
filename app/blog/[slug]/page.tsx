@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, Clock3 } from "lucide-react";
-import { getAllPosts, getPost, inlineMarkdown, parseBlocks, readingTime, relatedAppFor } from "@/lib/blog";
+import { getAllPosts, getPost, inlineMarkdown, readingTime, relatedAppFor } from "@/lib/blog";
 import ArticleToc from "./article-toc";
+import ArticleContent from "./article-content";
 
 export function generateStaticParams() {
   return getAllPosts().map(({ slug }) => ({ slug }));
@@ -45,13 +45,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <div className="articleBody wrap">
         <ArticleToc headings={tocHeadings}/>
         <div className="articleProse">
-          {parseBlocks(articleBody).map((block, index) => {
-            if (block.type === "heading") { const id = block.text!.toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""); return block.level === 3 ? <h3 id={id} key={index}>{block.text}</h3> : <h2 id={id} key={index}>{block.text}</h2>; }
-            if (block.type === "image") return <figure className="articleFigure" key={index}><Image src={block.src!} alt={block.alt!} width={1536} height={1024} sizes="(max-width: 900px) 100vw, 720px"/><figcaption>{block.alt}</figcaption></figure>;
-            if (block.type === "quote") return <blockquote key={index}>{inlineMarkdown(block.text!)}</blockquote>;
-            if (block.type === "list") return <ul key={index}>{block.items!.map((item) => <li key={item}>{inlineMarkdown(item)}</li>)}</ul>;
-            return <p key={index}>{inlineMarkdown(block.text!)}</p>;
-          })}
+          <ArticleContent body={articleBody}/>
           {faqs.length > 0 && <section className="articleFaq" id="faq"><span>FREQUENTLY ASKED QUESTIONS</span><h2>Questions about {post.targetQuery}</h2>{faqs.map((faq, index) => <details key={faq.question} open={index === 0}><summary>{faq.question}</summary><p>{inlineMarkdown(faq.answer)}</p></details>)}</section>}
           {relatedApp && <aside className="relatedTool"><div><span>RELATED SEO APP</span><h2>{relatedApp.name}</h2><p>{relatedApp.description}</p></div><a href={relatedApp.url} target="_blank" rel="noreferrer">Explore the live tool <ArrowUpRight size={17}/></a></aside>}
         </div>
