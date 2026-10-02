@@ -2,8 +2,8 @@
 title: >-
   MUVERA Explained for SEOs—Without Turning a Research Paper Into a Ranking
   Factor
-status: draft
-publishedDate: 2026-10-01
+status: published
+publishedDate: 2026-09-16
 metaTitle: 'MUVERA Explained for SEOs: Research vs. Ranking Claims'
 description: >-
   What MUVERA does, why multi-vector retrieval is expensive, and how I separate
