@@ -1,6 +1,6 @@
 ---
 title: An AI Citation Is Not Proof That the Answer Is Correct
-status: draft
+status: published
 publishedDate: 2026-10-01
 metaTitle: 'AI Citation Accuracy: Does the Source Support the Claim?'
 description: >-
