@@ -2,8 +2,8 @@
 title: >-
   When Two Helpful Articles Answer the Same Question: Merge, Differentiate, or
   Keep Both?
-status: draft
-publishedDate: 2026-10-02
+status: published
+publishedDate: 2026-10-04
 metaTitle: 'Overlapping Blog Articles: Merge, Differentiate, or Keep?'
 description: >-
   Similar keywords do not automatically mean two articles should merge. How I
