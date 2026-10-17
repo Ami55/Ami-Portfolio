@@ -1,7 +1,7 @@
 ---
 title: Did My Content Change Improve AI Visibility—or Did the Answer Just Change?
 status: published
-publishedDate: 2026-10-01
+publishedDate: 2026-10-16
 metaTitle: Did Your Content Update Improve AI Visibility?
 description: >-
   How to test whether a content edit improved AI visibility using fixed prompts,
