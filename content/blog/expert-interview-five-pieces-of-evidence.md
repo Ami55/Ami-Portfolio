@@ -1,7 +1,7 @@
 ---
 title: One Expert Interview, Five Pieces of Evidence Worth Publishing
-status: draft
-publishedDate: 2026-10-02
+status: published
+publishedDate: 2026-10-06
 metaTitle: Turn One Expert Interview Into Useful Content Evidence
 description: >-
   How I would turn an expert interview into a decision rule, failure case,
