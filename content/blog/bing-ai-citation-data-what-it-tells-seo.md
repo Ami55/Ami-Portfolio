@@ -1,7 +1,7 @@
 ---
 title: What Bing’s AI Citation Data Can—and Cannot—Tell an SEO Team
-status: draft
-publishedDate: 2026-10-02
+status: published
+publishedDate: 2026-10-12
 metaTitle: 'Bing AI Performance: What Citation Data Really Tells You'
 description: >-
   How I would use Bing’s AI Performance report without confusing citations with
