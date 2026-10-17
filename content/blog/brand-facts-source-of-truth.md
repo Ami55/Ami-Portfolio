@@ -1,7 +1,7 @@
 ---
 title: Your Brand Facts Agree. But Which Source Owns the Truth?
-status: draft
-publishedDate: 2026-10-01
+status: published
+publishedDate: 2026-10-11
 metaTitle: 'Brand Fact Governance: Evidence, Ownership, and Updates'
 description: >-
   Consistent brand facts can still be wrong. How I would track evidence, assign
