@@ -1,7 +1,7 @@
 ---
 title: Do You Need Special Schema for AI Search? What I Would Actually Audit
-status: draft
-publishedDate: 2026-10-02
+status: published
+publishedDate: 2026-10-03
 metaTitle: Do You Need Special Schema for AI Search?
 description: >-
   Google says its AI features do not require special schema. What I would audit
