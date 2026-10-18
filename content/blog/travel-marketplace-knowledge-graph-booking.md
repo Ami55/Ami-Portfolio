@@ -22,7 +22,9 @@ The difficult part is keeping those things connected correctly.
 
 A hotel might serve breakfast without including it in the selected price. A room might accommodate three people while the displayed offer covers only two. Free cancellation might apply to one rate and disappear when the traveller chooses another.
 
-This is why I would start a travel knowledge graph with the booking decision.
+This is why I would start a travel knowledge graph with the booking decision.\
+\
+![Hotel connected to a room, key, calendar, and booking ticket, illustrating relationships in a travel knowledge graph.](/blog/images/travel-marketplace-knowledge-graph-booking/01-knowledge-graph.png)
 
 ## Decide which facts belong to which entity
 
