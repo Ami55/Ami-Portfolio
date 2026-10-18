@@ -18,7 +18,9 @@ Now the system needs to move from describing an attractive option to confirming 
 
 That transition is where I would focus an agentic-commerce audit for a travel marketplace.
 
-Olaf Kopp uses Agentic Commerce Optimization to describe work that makes individual offers understandable and actionable for agents. Applied to travel, I find it useful as a framework for examining the distance between a recommendation and a confirmed reservation. [Kopp’s ACO article](https://www.kopp-online-marketing.com/agentic-commerce-optimization-aco-how-shops-make-products-visible-and-orderable-in-ai-answers-and-for-agents).
+Olaf Kopp uses Agentic Commerce Optimization to describe work that makes individual offers understandable and actionable for agents. Applied to travel, I find it useful as a framework for examining the distance between a recommendation and a confirmed reservation. [Kopp’s ACO article](https://www.kopp-online-marketing.com/agentic-commerce-optimization-aco-how-shops-make-products-visible-and-orderable-in-ai-answers-and-for-agents).\
+\
+![A connected path leads from a hotel through a calendar and price tag to a confirmed booking ticket.](/blog/images/agentic-commerce-travel-booking/03-agentic-commerce.png)
 
 ## Separate discovery, selection, and confirmation
 
