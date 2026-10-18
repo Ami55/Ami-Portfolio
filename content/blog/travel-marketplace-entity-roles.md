@@ -1,7 +1,7 @@
 ---
 title: Who Actually Runs the Tour? The Entity Clarity Problem on Travel Marketplaces
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-09-21
 metaTitle: 'Travel Marketplace Entity Clarity: Who Runs the Tour?'
 description: >-
   How I would clarify the roles of marketplaces, operators, and guides so
