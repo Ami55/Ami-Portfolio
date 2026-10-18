@@ -1,7 +1,7 @@
 ---
 title: 'E-E-A-T on a Travel Marketplace: The Evidence Behind the Page'
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-10-11
 metaTitle: 'E-E-A-T for Travel Marketplaces: Audit the Evidence'
 description: >-
   How I would audit E-E-A-T across travel pages, policies, and
