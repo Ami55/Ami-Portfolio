@@ -17,7 +17,9 @@ But does that qualified specialist deliver that service in that location?
 
 That is a different claim. We cannot establish it simply because all three facts exist somewhere on the website.
 
-This is where I would take an entity audit further. After checking which entities appear, I would check whether the relationships between them are actually supported.
+This is where I would take an entity audit further. After checking which entities appear, I would check whether the relationships between them are actually supported.\
+\
+![An open guide with a highlighted passage connects to three focused articles, illustrating related content at different levels of detail.](/blog/images/relationship-audit-before-more-content/08-content-structure.png)
 
 ## Start with a question that crosses pages
 
