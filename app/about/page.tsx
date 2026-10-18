@@ -23,9 +23,9 @@ const strengths=[
 
 export default function AboutPage(){return <main>
   <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><nav><Link href="/">Portfolio</Link><Link href="/apps">Tools</Link><Link href="/blog">Insights</Link></nav></header>
-  <section className="aboutHero aboutHeroRepaired wrap">
-    <figure className="aboutPortrait aboutPortraitBw"><img src="/ami-saeednia-profile.jpg" alt="Ami Saeednia, SEO and GEO Strategist"/></figure>
-    <div className="aboutHeroHeading"><h1 className="helloTitle"><span className="helloLead">Hello, I’m</span><span className="aboutName">Ami Saeednia</span></h1><p className="heroRole">SEO / GEO Strategist · Search systems · AI visibility</p></div>
+  <section className="aboutHero wrap">
+    <figure className="aboutPortrait aboutPortraitBw"><img src="/ami-saeednia-profile-bw.png" alt="Ami Saeednia, SEO and GEO Strategist"/></figure>
+    <div className="aboutHeroHeading"><h1 className="helloTitle"><span className="helloLead">Hello, I’m</span><span className="signatureName">Ami Saeednia</span></h1><p className="heroRole">SEO / GEO Strategist · Search systems · AI visibility</p></div>
     <div className="aboutHeroCopy"><p>I began in computer science, moved into e-commerce and marketing, and found the work that brings those disciplines together: search.</p><p>Over more than nine years, I’ve worked across retail, international education, iGaming, startups, and global travel. The environments changed; the thread stayed the same. I make complex search systems easier to understand, prioritize, and use.</p><div className="aboutHeroLinks"><a href="mailto:ameneh.saeednia@gmail.com">Email me <ArrowUpRight size={17}/></a><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={17}/></a><a href="https://orcid.org/0000-0002-8812-2306" target="_blank" rel="noreferrer">ORCID <ArrowUpRight size={17}/></a></div></div>
   </section>
   <section className="aboutCollaborations wrap" aria-labelledby="collaborations-title">
