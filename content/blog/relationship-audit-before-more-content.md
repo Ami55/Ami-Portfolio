@@ -1,6 +1,6 @@
 ---
 title: The Relationship Audit I Would Run Before Adding More Content
-status: draft
+status: published
 publishedDate: 2026-10-18
 metaTitle: An Entity Relationship Audit Before Adding More Content
 description: >-
