@@ -1,7 +1,7 @@
 ---
 title: Should I Split a Long Guide Into Smaller Articles for AI Search?
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-10-07
 metaTitle: Long Guides or Short Articles for AI Search?
 description: >-
   How I would decide whether to split a long guide: distinct reader needs,
