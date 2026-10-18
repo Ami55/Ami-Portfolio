@@ -1,7 +1,7 @@
 ---
 title: 'Query Fan-Out: How I Would Map the Questions Behind a Travel Booking'
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-09-21
 metaTitle: 'Query Fan-Out for Travel: Map the Booking Decisions'
 description: >-
   How I would use query fan-out to map travel decisions, identify missing
