@@ -2,7 +2,7 @@
 title: >-
   Information Gain in Travel Content: What Can the Traveller Decide After
   Reading Your Page?
-status: draft
+status: published
 publishedDate: 2026-10-18
 metaTitle: 'Information Gain in Travel Content: Help Travellers Decide'
 description: >-
@@ -24,6 +24,8 @@ Those sentences might be reasonable. They also leave most of the traveller’s r
 When I assess information gain in travel content, I would ask what uncertainty the page removes.
 
 I am using “information gain” here as an editorial principle: the useful knowledge a reader gains beyond what they already had. I would not present it as a score we can calculate to predict Google rankings.
+
+![Magnifying glass reveals a detailed travel route and location pin among maps and information cards.](/blog/images/information-gain-travel-content-decisions/02-information-gain.png)
 
 ## Start with the unresolved decision
 
