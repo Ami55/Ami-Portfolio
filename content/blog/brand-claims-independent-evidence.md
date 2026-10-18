@@ -1,7 +1,7 @@
 ---
 title: Ten Websites Repeat Your Brand Claim. How Many Actually Checked It?
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-10-01
 metaTitle: 'Brand Mentions vs Independent Evidence: What to Audit'
 description: >-
   How I would trace brand claims to their original sources and separate repeated
