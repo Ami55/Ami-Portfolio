@@ -20,7 +20,9 @@ Those are useful starting points. But I would still want to ask a more specific 
 
 If the page says a tour is suitable for someone with limited mobility, who checked that? If it describes a guide as a specialist, what is the relevant experience? If the cancellation terms change between the listing and checkout, which version should the traveller believe?
 
-This is where E-E-A-T becomes useful to me as an audit framework. It helps connect the quality of a page with the people and processes behind it.
+This is where E-E-A-T becomes useful to me as an audit framework. It helps connect the quality of a page with the people and processes behind it.\
+\
+![Three stacks of source documents connect to a shield with a check mark, illustrating evidence supporting trust.](/blog/images/eeat-travel-marketplace-evidence/05-eeat-evidence.png)
 
 ## How I would read an E-E-A-T signals infographic
 
