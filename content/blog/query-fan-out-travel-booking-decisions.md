@@ -18,7 +18,9 @@ Which port? What time can the traveller leave the ship? When must they return? H
 
 For a travel marketplace, this is what makes query fan-out worth understanding.
 
-The opportunity goes beyond finding more variations of “private shore excursion.” It involves understanding which questions must be resolved before someone can confidently choose an experience.
+The opportunity goes beyond finding more variations of “private shore excursion.” It involves understanding which questions must be resolved before someone can confidently choose an experience.\
+\
+![One travel request can lead to several related searches about timing, transport, location, and suitability.](/blog/images/query-fan-out-travel-booking-decisions/07-query-fan-out.png)
 
 ## What we know—and what we are modelling
 
