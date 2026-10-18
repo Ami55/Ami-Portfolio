@@ -20,7 +20,9 @@ Does the company employ the guides? Operate the tours? Connect travellers with i
 
 Those distinctions matter to a traveller. They also matter when a machine extracts a short description and uses it to explain the business.
 
-I would start a marketplace’s entity audit by checking whether its sentences make those roles clear.
+I would start a marketplace’s entity audit by checking whether its sentences make those roles clear.\
+\
+![A storefront, compass, and destination pin connected above a map represent a marketplace, tour operator, and local guide.](/blog/images/travel-marketplace-entity-roles/04-entity-roles.png)
 
 ## Name the organisation and the relationship
 
