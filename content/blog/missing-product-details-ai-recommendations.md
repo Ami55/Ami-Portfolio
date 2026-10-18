@@ -1,7 +1,7 @@
 ---
 title: The Missing Product Detail That Can Change the Entire Recommendation
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-10-05
 metaTitle: Missing Product Details and AI Shopping Recommendations
 description: >-
   A practical audit of product requirements, variants, and unknowns that can
