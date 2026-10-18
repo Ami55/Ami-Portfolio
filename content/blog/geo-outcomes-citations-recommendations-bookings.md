@@ -1,7 +1,7 @@
 ---
 title: Before Calling It GEO, Decide What You Want to Improve
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-09-15
 metaTitle: 'GEO Goals: Citations, Brand Recommendations, or Bookings?'
 description: >-
   A practical way to define GEO work for travel marketplaces: separate
