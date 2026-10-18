@@ -1,7 +1,7 @@
 ---
-title: 'Agentic Commerce for Travel: Being Recommended Is Only the Beginning'
-status: draft
-publishedDate: 2026-10-18
+title: 'Agentic Commerce for Travel Industry: Being Recommended Is Only the Beginning'
+status: published
+publishedDate: 2026-09-29
 metaTitle: 'Agentic Commerce for Travel: From Recommendation to Booking'
 description: >-
   How I would audit the gap between an AI recommendation and a confirmed travel
