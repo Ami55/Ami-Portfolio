@@ -21,7 +21,9 @@ Would I count that as a successful mention?
 
 I would record it, but I would also flag the mismatch. Visibility becomes useful when the description helps the right customer understand what the business can provide.
 
-That is the part of brand-context optimization I would prioritize: the relationship between the brand, the customer’s need, and the evidence supporting the recommendation.
+That is the part of brand-context optimization I would prioritize: the relationship between the brand, the customer’s need, and the evidence supporting the recommendation.\
+\
+![A location pin fits a matching slot on a travel map, illustrating a recommendation aligned with the traveller’s needs.](/blog/images/brand-context-recommendation-accuracy/09-brand-context.png)
 
 ## Start with the situations where the brand belongs
 
