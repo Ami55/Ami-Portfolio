@@ -2,8 +2,8 @@
 title: >-
   A Hotel Is Not a Booking: How I Would Model a Travel Marketplace’s Knowledge
   Graph
-status: draft
-publishedDate: 2026-10-18
+status: published
+publishedDate: 2026-10-14
 metaTitle: 'Knowledge Graphs for Travel Marketplaces: Model the Booking'
 description: >-
   How I would connect hotels, rooms, rates, tours, and dated offers in a travel
