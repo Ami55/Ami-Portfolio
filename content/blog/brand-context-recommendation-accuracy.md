@@ -1,6 +1,6 @@
 ---
 title: Your Brand Appears in the AI Answer. But What Is It Being Recommended For?
-status: draft
+status: published
 publishedDate: 2026-10-03
 metaTitle: 'Brand Context in AI Answers: Is the Recommendation Accurate?'
 description: >-
