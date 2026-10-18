@@ -20,7 +20,9 @@ Those outcomes require different work. Putting them under one label does not mak
 
 In my earlier writing about SEO, GEO, and AEO, I questioned how much time we spend naming the work. The practical question I want to explore here is what happens after a company agrees to invest in it.
 
-Who needs to be involved, what should they change, and what evidence would tell us that it helped?
+Who needs to be involved, what should they change, and what evidence would tell us that it helped?\
+\
+![A quotation document, recommendation pin, and confirmed ticket represent citations, recommendations, and bookings.](/blog/images/geo-outcomes-citations-recommendations-bookings/06-geo-outcomes.png)
 
 ## A citation and a recommendation are different outcomes
 
