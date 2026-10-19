@@ -1,3 +1,4 @@
+import { blogSchema, serializeSchema } from "@/lib/schema";
 import Link from "next/link";
 import { ArrowUpRight, Clock3, Sparkles } from "lucide-react";
 import { getAllPosts, readingTime } from "@/lib/blog";
@@ -9,7 +10,7 @@ export default function BlogPage() {
   const posts = getAllPosts();
   const featured = posts.find((post) => post.slug === "query-fan-out-explained") || posts[0];
   const articles = posts.filter((post) => post.slug !== featured?.slug);
-  return <main>
+  return <main><script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeSchema(blogSchema)}}/>
     <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><nav><Link href="/#work">Selected Work</Link><Link href="/apps">Tools</Link><Link className="activeNav" href="/blog">Insights</Link><Link href="/about">About</Link></nav></header>
     <section className="blogHero wrap"><div><span className="status"><i/> SEO STRATEGY × PRACTICAL RESEARCH</span><h1>Search thinking,<br/><em>made useful.</em></h1></div><p>Field notes on entity SEO, natural language processing, AI visibility, E-E-A-T, semantic systems, and the decisions behind sustainable search growth.</p></section>
     {featured && <section className="featuredArticle wrap"><div className="featureVisual" aria-hidden="true"><span>{String(featured.number).padStart(2,"0")}</span><Sparkles size={46}/><b>AI</b><div className="signalLines"><i/><i/><i/></div></div><article><span className="articleCategory">{featured.category}</span><h2>{featured.title}</h2><p>{featured.description}</p><div className="articleMeta"><span>{featured.date}</span><span><Clock3 size={14}/>{readingTime(featured)}</span></div><Link href={`/blog/${featured.slug}`}>Read the article <ArrowUpRight size={17}/></Link></article></section>}

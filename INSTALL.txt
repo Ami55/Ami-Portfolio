@@ -1,0 +1,16 @@
+SEO Girl structured data update — 18 October 2026
+
+Prepared against Ami55/Ami-Portfolio commit 486e3e6b640d71a1d6f3427fce9f6af62d7adb20.
+Not deployed: the GitHub integration returned 403 Resource not accessible by integration.
+
+Files replace the matching repository paths; lib/schema.ts is new.
+Use a review branch and check a Vercel preview before merging. If the repository has changed since the commit above, apply the changes as a diff rather than overwriting newer pages.
+
+Adds a shared Person and WebSite graph, ProfilePage on About, Blog and CollectionPage on Insights, and connected BlogPosting/WebPage/BreadcrumbList graphs on articles. Uses images parsed from the article body using the same paths allowed by the image renderer. Keeps existing FAQ markup and escapes less-than characters in JSON-LD. Does not add invented ratings, businesses, or modification dates.
+
+Validation completed: JSON round trip, author IDs, profile relationship, breadcrumb positions, image omission for imageless posts, omission of unsupported modification dates, and script-closing injection escaping.
+Full Next.js build and Google Rich Results Test have NOT been run. Local project dependencies were unavailable. Test the Vercel preview, then validate an article and /about with Google's Rich Results Test before deployment.
+
+References:
+https://developers.google.com/search/docs/appearance/structured-data/article
+https://developers.google.com/search/docs/appearance/structured-data/profile-page
