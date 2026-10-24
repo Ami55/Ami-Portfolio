@@ -1,0 +1,1 @@
+Replace the two root files with the versions in this ZIP. This aligns the package engine with the Vercel project Node 24 setting. The local build passed on Node 24; verify the next Vercel build after applying.
