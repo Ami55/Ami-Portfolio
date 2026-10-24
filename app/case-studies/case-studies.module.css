@@ -1,5 +1,4 @@
-:global(:root){--cs-paper:#f7f8fc;--cs-ink:#151b2c;--cs-muted:#68728a;--cs-line:#dfe4ef;--cs-violet:#5237ff;--cs-purple:#7c61ff;--cs-mint:#43e6ad;--cs-navy:#10182d}
-.shell{min-height:100vh;background:var(--cs-paper);color:var(--cs-ink)}
+.shell{--cs-paper:#f7f8fc;--cs-ink:#151b2c;--cs-muted:#68728a;--cs-line:#dfe4ef;--cs-violet:#5237ff;--cs-purple:#7c61ff;--cs-mint:#43e6ad;--cs-navy:#10182d;min-height:100vh;background:var(--cs-paper);color:var(--cs-ink)}
 .wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}
 .topBar{height:78px;display:flex;align-items:center;justify-content:space-between}
 .brand{font-size:20px;font-weight:850;letter-spacing:-.06em}.brand span{color:var(--cs-violet);margin-left:3px}
