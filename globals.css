@@ -232,3 +232,10 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
 .aboutHero .helloLead{font-size:1.65em;line-height:1;letter-spacing:-.075em;white-space:nowrap}
 .aboutHero .signatureName.signatureReference{left:0;top:-.25em;width:104%}
 @media(max-width:580px){.aboutHero .helloLead{font-size:1.45em}.aboutHero .signatureName.signatureReference{top:0;width:104%}}
+
+/* About greeting uses the homepage hero font sizes at each breakpoint. */
+.aboutHero .helloLead{font-size:clamp(40px,4.5vw,62px)}
+@media(max-width:900px){.aboutHero .helloLead{font-size:clamp(38px,7vw,54px)}}
+@media(max-width:580px){.aboutHero .helloLead{font-size:34px}}
+
+.caseStudyRead{display:inline-flex;align-items:center;gap:8px;margin-top:14px;color:var(--violet);font-size:12px;font-weight:800}.caseStudyRead:hover{gap:12px}
