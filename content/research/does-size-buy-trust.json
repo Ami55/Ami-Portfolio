@@ -1,0 +1,40 @@
+{
+  "title": "Does Size Buy Trust?",
+  "status": "published",
+  "publishedDate": "2026-10-24",
+  "topic": "E-E-A-T · Evidence",
+  "description": "An independent review of visible trust evidence across three Canadian apparel brands.",
+  "pages": 11,
+  "pdf": "/resources/files/does-size-buy-trust.pdf",
+  "cover": "/resources/covers/does-size-buy-trust.jpg",
+  "stats": [
+    {
+      "value": "3",
+      "label": "brands"
+    },
+    {
+      "value": "15",
+      "label": "sampled pages"
+    },
+    {
+      "value": "16",
+      "label": "review criteria"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Evidence needs to reach the product page",
+      "body": "The report found useful brand evidence on About pages that was not consistently visible on the sampled product pages. A shopper may need that evidence closer to the decision."
+    },
+    {
+      "heading": "Make the scoring method visible",
+      "body": "Each of sixteen author-defined criteria was marked present, partial or absent on the sampled material. The framework is a structured review aid; it is not a Google E-E-A-T score."
+    },
+    {
+      "heading": "Use the gaps to ask better questions",
+      "body": "For a follow-up audit, I would check whether important product and brand claims have accessible support, who is responsible for them, and whether the evidence is visible in the purchase journey."
+    }
+  ],
+  "methodology": "Five pages each from A Bronze Age, tentree and Herschel were reviewed on 24 October 2026. Sixteen criteria were grouped under experience, expertise, authoritativeness and trust, with scores of 1, 0.5 or 0.",
+  "limitations": "Three brands cannot establish whether business size causes trust or search performance. Not observed on a sampled page does not mean absent sitewide. Page sampling and collapsed content affect what the review can detect."
+}

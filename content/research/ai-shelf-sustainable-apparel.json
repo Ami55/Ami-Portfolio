@@ -1,0 +1,40 @@
+{
+  "title": "The AI Shelf: Sustainable Apparel",
+  "status": "published",
+  "publishedDate": "2026-10-22",
+  "topic": "AI visibility · Retail",
+  "description": "How Canadian apparel brands appeared across shopping prompts in ChatGPT and Google AI Mode.",
+  "pages": 12,
+  "pdf": "/resources/files/ai-shelf-sustainable-apparel.pdf",
+  "cover": "/resources/covers/ai-shelf-sustainable-apparel.jpg",
+  "stats": [
+    {
+      "value": "24",
+      "label": "AI answers"
+    },
+    {
+      "value": "12",
+      "label": "prompts"
+    },
+    {
+      "value": "2",
+      "label": "AI systems"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Different systems, different shelves",
+      "body": "Only three of eight unbranded prompts shared any brand between the two systems. In this sample, a single prompt or platform would have given an incomplete view of brand visibility."
+    },
+    {
+      "heading": "Brand presence and source presence are separate",
+      "body": "tentree appeared in eight of the sixteen unbranded answers. The report also recorded different linking patterns: Google AI Mode returned more distinct source links, while ChatGPT linked more heavily to brand websites."
+    },
+    {
+      "heading": "What I would investigate next",
+      "body": "Repeat the prompts over time, separate recommendations from incidental mentions, and compare product attributes with the sources attached to each answer. These observations suggest questions for testing; they do not establish ranking factors."
+    }
+  ],
+  "methodology": "Twelve prompts across awareness, consideration and decision stages, run in two systems on 22 October 2026 in Vancouver. ChatGPT used temporary chats; Google AI Mode was signed in. Brand mentions and visible links were recorded.",
+  "limitations": "A small, one-day snapshot. Location, account context and answer variability can affect results. Brand matching can include linked brands. No traffic, sales or causal effects were measured."
+}
