@@ -2,13 +2,14 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { getResources, type Resource, type ResourceKind } from "@/lib/resources";
 import s from "./resources.module.css";
+import { SiteFooter } from "./site-footer";
 
 export const labels = { research: "Research", workbooks: "Workbooks" };
 export function ResourceShell({ kind, children }: { kind: ResourceKind; children: ReactNode }) {
   return <div className={s.shell}><header className={s.header}>
     <Link className={s.logo} href="/">SEO<span>Girl</span></Link>
     <nav className={s.nav} aria-label="Main navigation">{[["/", "Portfolio"], ["/case-studies", "Case studies"], ["/research", "Research"], ["/workbooks", "Workbooks"], ["/apps", "Tools"], ["/blog", "Insights"], ["/about", "About"]].map(([href, label]) => <Link key={href} href={href} aria-current={href === `/${kind}` ? "page" : undefined}>{label}</Link>)}</nav>
-  </header><main className={s.wrap}>{children}</main><footer className={s.footer}><p>SEO Girl · Ameneh Saeednia</p><Link href="mailto:ameneh.saeednia@gmail.com">Let’s talk about your search challenges</Link></footer></div>;
+  </header><main className={s.wrap}>{children}</main><SiteFooter /></div>;
 }
 export function ResourceCard({ entry, kind }: { entry: Resource; kind: ResourceKind }) {
   return <article className={s.card}>
