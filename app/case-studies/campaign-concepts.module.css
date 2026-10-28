@@ -2,3 +2,23 @@
 .hero{grid-template-columns:1fr 1.08fr;gap:48px;padding:24px 0 40px}.heroCopy{min-width:0}.hero h1{font-size:clamp(38px,4.2vw,56px);line-height:1.04}.status{display:block;width:fit-content;margin-top:16px;padding:8px 11px;border:1px solid #dcd6f5;border-radius:100px;background:#eeebfc;color:#66578e;font-size:11px;font-weight:700}.heroRole{font-size:12px;line-height:1.8;color:#68728a;margin:18px 0}.heroButton{display:inline-flex;padding:13px 17px;border-radius:11px;background:#5237ff;color:white;font-weight:800;font-size:12px}.heroPreview{display:block;min-width:0;padding:10px;border:1px solid #ddd8f0;border-radius:20px;background:white;box-shadow:0 22px 55px #24204c1a;transform:rotate(1deg)}.browserBar{height:30px;display:flex;align-items:center;gap:5px;padding:0 5px;color:#85829b}.browserBar>span{width:6px;height:6px;background:#d8d3e8;border-radius:50%}.browserBar b{margin-left:auto;font-size:8px;letter-spacing:.13em}.heroImage{height:420px;overflow:hidden;border-radius:10px;background:#181338}.heroImage img{display:block;width:100%;height:auto}.previewCaption{display:block;padding:14px 5px 5px;color:#66578e;font-size:11px;font-weight:750}@media(max-width:760px){.hero{grid-template-columns:1fr;gap:28px}.hero h1{font-size:40px}.heroImage{height:340px}.heroPreview{transform:none}.heroButton{font-size:11px}}
 
 .heroActions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.galleryLink{font-size:12px;font-weight:800;color:#5237ff}.downloadNote{display:block;color:#7b8092;font-size:10px;margin-top:12px}
+
+/* Compact campaign header */
+.breadcrumb{padding:18px 0 12px;font-size:11px;gap:10px}
+.hero{grid-template-columns:minmax(0,1fr) 300px;gap:38px;padding:14px 0 22px;align-items:center}
+.heroCopy>.eyebrow{display:inline-block;font-size:10px;letter-spacing:.11em}
+.status{display:inline-block;vertical-align:middle;margin:0 0 0 12px;padding:4px 8px;font-size:10px}
+.hero h1{font-size:clamp(32px,3.1vw,42px);line-height:1.06;letter-spacing:-.045em;margin:14px 0 12px;max-width:780px}
+.hero>div>p{font-size:15px;line-height:1.65;margin:0;max-width:720px}
+.heroRole{font-size:11px;margin:12px 0}
+.heroActions{gap:14px}
+.heroButton{padding:11px 14px;font-size:11px;border-radius:9px}
+.galleryLink{font-size:11px}
+.downloadNote{font-size:9px;margin-top:8px}
+.heroPreview{padding:6px;border-radius:12px;box-shadow:none;transform:none;background:#fff}
+.heroImage{height:210px;border-radius:7px}
+.previewCaption{padding:9px 4px 4px;font-size:9px}
+.notice{margin:0;padding:12px 0 16px;background:transparent;border:0;border-bottom:1px solid #dfe4ef;border-radius:0;font-size:11px;line-height:1.6;color:#7b8092}
+.notice+.section{padding-top:30px}
+@media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr) 220px;gap:22px}.hero h1{font-size:32px}.heroImage{height:190px}.status{margin:8px 0 0;display:table}.hero>div>p{font-size:14px}}
+@media(max-width:560px){.hero{grid-template-columns:1fr;gap:18px;padding-top:8px}.hero h1{font-size:32px}.heroPreview{max-width:100%;width:100%}.heroImage{height:160px}.heroRole{margin:10px 0}.breadcrumb{padding-top:14px}.notice{padding-top:0}}
