@@ -18,7 +18,7 @@ export function SiteFooter() {
         </nav>
         <div className={s.contact}>
           <p className={s.label}>Get in touch</p>
-          <a href="mailto:ameneh.saeednia@gmail.com" className={s.email}>ameneh.saeednia@gmail.com</a>
+          <a href="mailto:ameneh.saeednia@gmail.com" className={s.email}>Email</a>
           <a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
