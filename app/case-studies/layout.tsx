@@ -10,7 +10,7 @@ export default function CaseStudiesLayout({ children }: { children: ReactNode })
         <nav className={s.nav} aria-label="Main navigation">
           <Link href="/">Portfolio</Link>
           <Link href="/case-studies" aria-current="page">Case studies</Link>
-          <Link href="/apps">Tools</Link>
+          <Link href="/research">Research</Link><Link href="/workbooks">Workbooks</Link><Link href="/apps">Tools</Link>
           <Link href="/blog">Insights</Link>
           <Link href="/about">About</Link>
         </nav>
@@ -20,9 +20,9 @@ export default function CaseStudiesLayout({ children }: { children: ReactNode })
         <div className={s.wrap + " " + s.footerInner}>
           <Link href="/" className={s.footerName}>AMI SAEEDNIA · SEO STRATEGIST</Link>
           <nav className={s.footerLinks} aria-label="Footer navigation">
-            <a href="mailto:ameneh.saeednia@gmail.com">Email Ami ↗</a>
-            <a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <Link href="/">Back to portfolio ↑</Link>
+            <a href="mailto:ameneh.saeednia@gmail.com">Email Ami</a>
+            <a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <Link href="/">Back to portfolio</Link>
           </nav>
         </div>
       </footer>

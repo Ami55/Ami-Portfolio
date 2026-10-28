@@ -17,14 +17,14 @@ export default function CaseStudiesPage() {
           <h1>Case studies that show the thinking behind the result.</h1>
           <p className={s.heroLead}>A closer look at how I diagnose search problems, connect evidence, and shape work around business goals.</p>
           <div className={s.heroLinks}>
-            <a className={s.button} href="#case-library">Explore the case studies <span aria-hidden="true">↓</span></a>
-            <Link className={s.textLink} href="/">Back to portfolio <span aria-hidden="true">↗</span></Link>
+            <a className={s.button} href="#case-library">Explore the case studies </a>
+            <Link className={s.textLink} href="/">Back to portfolio </Link>
           </div>
         </div>
         <div className={s.heroArt} aria-hidden="true">
           <div className={s.artPanel}>
             <div className={s.artTop}><span>SEO STRATEGY / FIELD NOTES</span><i /></div>
-            <div className={s.artMetric}>Evidence → action</div>
+            <div className={s.artMetric}>Evidence into action</div>
             <div className={s.artCaption}>A repeatable path from diagnosis to decision</div>
             <div className={s.artFlow}><span/><span/><span/><span/></div>
           </div>
@@ -45,7 +45,7 @@ export default function CaseStudiesPage() {
               <strong className={s.cardMetric}>Nearly all lost organic traffic recovered</strong>
               <p>Investigating the causes of the decline, then addressing content overlap, semantic gaps, and trust signals through a focused recovery plan.</p>
               <div className={s.chipRow}><span className={s.chip}>SEO recovery</span><span className={s.chip}>Content structure</span><span className={s.chip}>Entity relevance</span></div>
-              <span className={s.cardLink}>Read the case study <b aria-hidden="true">↗</b></span>
+              <span className={s.cardLink}>Read the case study </span>
             </div>
           </Link>
 
@@ -56,7 +56,7 @@ export default function CaseStudiesPage() {
             <strong className={s.cardMetric}>~50% growth in qualified organic leads</strong>
             <p>Connecting multilingual search architecture, localized content, and enrollment goals across 15+ markets.</p>
             <div className={s.chipRow}><span className={s.chip}>International SEO</span><span className={s.chip}>Lead generation</span></div>
-            <span className={s.cardLink}>Read the case study <b aria-hidden="true">↗</b></span>
+            <span className={s.cardLink}>Read the case study </span>
           </Link>
 
         </div>
@@ -65,7 +65,7 @@ export default function CaseStudiesPage() {
       <section className={s.wrap}>
         <div className={s.cta}>
           <div><h2>Want to see more of my work?</h2><p>Explore the tools and workflows I have built around recurring SEO problems.</p></div>
-          <Link className={s.ctaLink} href="/apps">Explore the app library <span aria-hidden="true">↗</span></Link>
+          <Link className={s.ctaLink} href="/apps">Explore the app library </Link>
         </div>
       </section>
     </main>
