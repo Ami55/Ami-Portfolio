@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import s from "./case-studies.module.css";
+import { SiteFooter } from "../resources/site-footer";
 
 export default function CaseStudiesLayout({ children }: { children: ReactNode }) {
   return (
@@ -16,16 +17,7 @@ export default function CaseStudiesLayout({ children }: { children: ReactNode })
         </nav>
       </header>
       {children}
-      <footer className={s.siteFooter}>
-        <div className={s.wrap + " " + s.footerInner}>
-          <Link href="/" className={s.footerName}>AMI SAEEDNIA · SEO STRATEGIST</Link>
-          <nav className={s.footerLinks} aria-label="Footer navigation">
-            <a href="mailto:ameneh.saeednia@gmail.com">Email Ami</a>
-            <a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <Link href="/">Back to portfolio</Link>
-          </nav>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
