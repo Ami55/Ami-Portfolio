@@ -1,0 +1,40 @@
+{
+  "title": "Built to Be Retrieved",
+  "status": "published",
+  "publishedDate": "2026-10-28",
+  "topic": "Passage retrieval · Content structure",
+  "description": "A controlled study of how section structure, explicit entity names and answer-first writing affect passage retrieval across four open retrieval methods.",
+  "pages": 9,
+  "pdf": "/resources/files/built-to-be-retrieved.pdf",
+  "cover": "/resources/covers/built-to-be-retrieved.jpg",
+  "stats": [
+    {
+      "value": "10",
+      "label": "source pages"
+    },
+    {
+      "value": "50",
+      "label": "controlled rewrites"
+    },
+    {
+      "value": "49",
+      "label": "test questions"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Short sections were the strongest intervention",
+      "body": "In this experiment, self-contained sections under question headings beat the plain-paraphrase control on retrieval scores for 84–92% of the 49 questions across the four methods. The report also records a 20–29 percentage-point improvement over the control in how often the top passage contained the answer. These are results within the study’s retrieval setup, not observed citation gains in live AI search."
+    },
+    {
+      "heading": "Naming entities and moving answers produced different effects",
+      "body": "Explicit entity names produced smaller, more mixed gains in selecting the answer-bearing passage. Answer-first rewrites showed no statistically significant retrieval-score improvement over the control in this setup. Combining all three interventions performed similarly to short sections alone."
+    },
+    {
+      "heading": "Restructure around questions, then test",
+      "body": "The practical hypothesis is to give one question a clear section, include the context needed to understand that section independently, and compare the result with a control. The report suggests starting with conversational pages whose answers are spread across stories and examples. Its suggested section lengths are an experimental approach to test, rather than a universal rule for AI search."
+    }
+  ],
+  "methodology": "Ten source pages—five posts from seogirl.ca and five related Wikipedia articles—were each rewritten five ways: answer first, short sections, explicit entities, all three combined, and a plain-paraphrase control. Forty-nine questions were tested using MiniLM, bge-small, e5-small and BM25. Passages were split at headings and capped at 200 words. Each page competed against passages from the other nine originals. The report uses paired Wilcoxon signed-rank tests and records a run date of 28 October 2026.",
+  "limitations": "This is a small, closed-corpus experiment with one writer and open retrieval methods. Some question headings closely echo the test questions, which may inflate the sectioning result. Original pages were already near the top-three ceiling, and the combined rewrites were longer. Source-group differences are exploratory. The experiment does not test ChatGPT, Perplexity or Google AI Mode ranking, answer generation, citations, traffic or conversions. The supplied PDF is the study record; underlying lab files were not included here."
+}
