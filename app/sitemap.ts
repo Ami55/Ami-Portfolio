@@ -4,7 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 const siteUrl = "https://www.seogirl.ca";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["", "/about", "/apps", "/blog"].map((path) => ({
+  const pages = ["", "/about", "/apps", "/blog", "/case-studies", "/case-studies/post-update-recovery", "/case-studies/international-lead-growth"].map((path) => ({
     url: `${siteUrl}${path}`,
   }));
   const posts = getAllPosts().map(({ slug }) => ({
