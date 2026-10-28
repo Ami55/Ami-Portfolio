@@ -25,7 +25,7 @@ export default function RecoveryCaseStudy() {
           <h1>Rebuilding organic visibility after a Google update</h1>
           <p className={s.detailLead}>A recovery effort focused on understanding why visibility fell and fixing the content and structural issues behind the loss, rather than treating each URL as an isolated problem.</p>
           <div className={s.metaGrid}>
-            <div className={s.metaBox}><span>My role</span><b>Senior SEO Specialist → SEO Strategist</b></div>
+            <div className={s.metaBox}><span>My role</span><b>Senior SEO Specialist, later SEO Strategist</b></div>
             <div className={s.metaBox}><span>Work</span><b>Technical and content SEO</b></div>
             <div className={s.metaBox}><span>Agency</span><b>Resulta</b></div>
           </div>
@@ -74,7 +74,7 @@ export default function RecoveryCaseStudy() {
 
       <section className={s.cta}>
         <div><h2>See the full case-study collection</h2><p>Explore multilingual search strategy and qualified enrollment lead generation.</p></div>
-        <Link className={s.ctaLink} href="/case-studies">All case studies <span aria-hidden="true">↗</span></Link>
+        <Link className={s.ctaLink} href="/case-studies">All case studies </Link>
       </section>
     </main>
   );
