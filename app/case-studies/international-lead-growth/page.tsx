@@ -64,7 +64,7 @@ export default function InternationalLeadCaseStudy() {
 
       <section className={s.cta}>
         <div><h2>Explore the other case studies</h2><p>See how I investigated organic losses and led a recovery strategy.</p></div>
-        <Link className={s.ctaLink} href="/case-studies">All case studies <span aria-hidden="true">↗</span></Link>
+        <Link className={s.ctaLink} href="/case-studies">All case studies </Link>
       </section>
     </main>
   );
