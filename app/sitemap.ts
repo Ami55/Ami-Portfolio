@@ -6,7 +6,7 @@ import { getResources } from "@/lib/resources";
 const siteUrl = "https://www.seogirl.ca";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["", "/about", "/apps", "/blog", "/research", "/workbooks", "/case-studies", "/case-studies/post-update-recovery", "/case-studies/international-lead-growth"].map((path) => ({
+  const pages = ["", "/about", "/apps", "/blog", "/research", "/workbooks", "/case-studies", "/case-studies/post-update-recovery", "/case-studies/international-lead-growth", "/case-studies/iskl-admissions-concept", "/case-studies/christmas-travel-concept"].map((path) => ({
     url: `${siteUrl}${path}`,
   }));
   const posts = getAllPosts().map(({ slug }) => ({
