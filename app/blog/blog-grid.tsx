@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUpRight, Clock3, Network, Search } from "lucide-react";
+import { Clock3, Network, Search } from "lucide-react";
 import { useState } from "react";
 
 type Post = { number: number; slug: string; title: string; description: string; category: string; read: string; date: string };
@@ -23,9 +23,10 @@ export default function BlogGrid({ posts }: { posts: Post[] }) {
       <div className="articleCardTop"><span>{String(post.number).padStart(2,"0")}</span>{post.category === "ENTITY SEO" ? <Network size={21}/> : <Search size={21}/>}</div>
       <span className="articleCategory">{post.category}</span><h3>{post.title}</h3><p>{post.description}</p>
       <div className="articleMeta"><span>{post.date}</span><span><Clock3 size={14}/>{post.read}</span></div>
-      <Link href={`/blog/${post.slug}`}>Read article <ArrowUpRight size={16}/></Link>
+      <Link href={`/blog/${post.slug}`}>Read article </Link>
     </article>)}</div>
     {filteredPosts.length === 0 && <div className="blogSearchEmpty"><Search size={28}/><h3>No matching insights</h3><p>Try a broader topic such as entity SEO, sitemaps, AI visibility, or field notes.</p></div>}
     {!normalizedQuery && posts.length > 6 && <div className="moreInsights"><button type="button" onClick={() => setExpanded((value) => !value)} aria-expanded={expanded}>{expanded ? "Show fewer insights" : `See more insights · ${posts.length - 6}`}</button></div>}
   </>;
 }
+
