@@ -243,3 +243,7 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
 .blogHero h1 em{font-weight:inherit}
 @media(max-width:900px){.blogHero h1{font-size:clamp(38px,7vw,54px)}}
 @media(max-width:580px){.blogHero h1{font-size:34px;line-height:1.08}}
+
+/* Keep the expanded resource navigation reachable at every screen size. */
+.nav{height:auto;min-height:82px;gap:24px;padding-block:20px}.nav nav{flex-wrap:wrap;gap:14px 24px;justify-content:flex-end}
+@media(max-width:900px){.nav{align-items:flex-start;flex-wrap:wrap}.nav nav{display:flex;justify-content:flex-start;gap:12px 18px;font-size:12px}}
