@@ -38,7 +38,7 @@ export default function CaseStudiesPage() {
           <p>From recovering organic visibility to connecting international search with enrollment goals.</p>
         </div>
         <div className={s.caseGrid}>
-          <Link className={s.card + " " + s.cardWide} href="/case-studies/post-update-recovery">
+          <Link className={s.card + " " + s.caseRow} href="/case-studies/post-update-recovery">
             <div className={s.cardArt}><RecoveryVisual /></div>
             <div>
               <div className={s.cardHead}><span className={s.cardLabel}>01 · RESULTA / IGAMING</span><span className={s.badge}>Client project</span></div>
@@ -50,14 +50,16 @@ export default function CaseStudiesPage() {
             </div>
           </Link>
 
-          <Link className={s.card} href="/case-studies/international-lead-growth">
-            <div className={s.cardHead}><span className={s.cardLabel}>02 · IMPACT / EDUCATION</span><span className={s.badge}>Client project</span></div>
+          <Link className={s.card + " " + s.caseRow} href="/case-studies/international-lead-growth">
             <div className={s.cardArt}><MarketVisual /></div>
-            <h3>Turning international search into qualified leads</h3>
-            <strong className={s.cardMetric}>~50% growth in qualified organic leads</strong>
-            <p>Connecting multilingual search architecture, localized content, and enrollment goals across 15+ markets.</p>
-            <div className={s.chipRow}><span className={s.chip}>International SEO</span><span className={s.chip}>Lead generation</span></div>
-            <span className={s.cardLink}>Read the case study </span>
+            <div>
+              <div className={s.cardHead}><span className={s.cardLabel}>02 · IMPACT / EDUCATION</span><span className={s.badge}>Client project</span></div>
+              <h3>Turning international search into qualified leads</h3>
+              <strong className={s.cardMetric}>~50% growth in qualified organic leads</strong>
+              <p>Connecting multilingual search architecture, localized content, and enrollment goals across 15+ markets.</p>
+              <div className={s.chipRow}><span className={s.chip}>International SEO</span><span className={s.chip}>Lead generation</span></div>
+              <span className={s.cardLink}>Read the case study</span>
+            </div>
           </Link>
 
         </div>
