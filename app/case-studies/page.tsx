@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import s from "./case-studies.module.css";
+import { CampaignCards } from "./campaign-concepts";
 import { MarketVisual, RecoveryVisual } from "./visuals";
 
 export const metadata: Metadata = {
@@ -61,6 +62,8 @@ export default function CaseStudiesPage() {
 
         </div>
       </section>
+
+      <CampaignCards />
 
       <section className={s.wrap}>
         <div className={s.cta}>
