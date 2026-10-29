@@ -1,3 +1,4 @@
+import { SiteFooter } from "../../resources/site-footer";
 import { SiteNavigation } from "../../site-navigation";
 import Markdoc from "@markdoc/markdoc";
 import { SITE_URL, articleSchema, serializeSchema } from "@/lib/schema";
@@ -64,6 +65,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <section className="nextArticle"><div className="wrap"><span>NEXT INSIGHT</span><h2>{next.title}</h2><Link href={`/blog/${next.slug}`}>Read next insight</Link></div></section>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(schema) }}/>{faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(faqSchema) }}/>} 
   </main>
-    <footer><div className="wrap"><div><span className="mini">AMI SAEEDNIA · SEO STRATEGIST</span><h2>Let’s build something<br/>search can understand.</h2><nav aria-label="Footer resources" style={{display:"flex",gap:"20px",flexWrap:"wrap",fontSize:"14px",marginTop:"24px"}}><Link href="/case-studies">Case studies</Link><Link href="/research">Research</Link><Link href="/workbooks">Workbooks</Link></nav></div><div className="footerLinks"><a href="mailto:ameneh.saeednia@gmail.com">Email</a><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn</a><Link href="/apps">App library</Link><a href="https://github.com/Ami55" target="_blank" rel="noopener noreferrer" className="githubLink">GitHub</a></div></div></footer>
+    <SiteFooter variant="full" />
   </>;
 }
+
