@@ -1,0 +1,45 @@
+{
+  "title": "Same Question, Different Searches",
+  "topic": "Query fan-out · Repeated runs",
+  "pages": 12,
+  "description": "Using my Query Fan-out Explorer to examine how reported searches and cited sites change when the same outdoor-gear questions are repeated.",
+  "stats": [
+    {
+      "value": "4",
+      "label": "questions"
+    },
+    {
+      "value": "11",
+      "label": "completed answers"
+    },
+    {
+      "value": "33",
+      "label": "reported searches"
+    }
+  ],
+  "tool": {
+    "slug": "query-fan-out-explorer",
+    "name": "Query Fan-out Explorer",
+    "description": "I built Query Fan-out Explorer to record the searches Gemini reports and the sources it cites with Google Search grounding. I used saved runs to compare query wording, source overlap and local context."
+  },
+  "sections": [
+    {
+      "heading": "The intent held while the wording moved",
+      "body": "Across the completed runs, only 3 of 30 distinct searches repeated word-for-word, ignoring case and punctuation. This measures exact wording, not semantic similarity: several searches expressed similar needs differently. For content planning, the useful hypothesis is to cover recurring intents rather than optimize around one run’s exact sub-queries."
+    },
+    {
+      "heading": "Price and place changed the search pattern",
+      "body": "The under-$300-in-Canada question triggered 4–7 searches per answer, often checking individual product prices. The report counted .ca sites as 53% of sources for that question and 46% for the BC packing question. A .ca domain is the study’s geographic proxy, not proof of a source’s ownership or audience."
+    },
+    {
+      "heading": "Repeat the question before drawing a conclusion",
+      "body": "Average pairwise overlap in cited sites ranged from 17% to 62% across the four questions. Reddit appeared in 9 of 11 answers. These observations support repeated testing; they do not establish that any specific content change causes an AI citation."
+    }
+  ],
+  "methodology": "I requested three consecutive runs of four outdoor-gear questions using Query Fan-out Explorer, Gemini and Google Search grounding, with Canada and English context. Eleven of twelve requested runs returned results on October 28, 2026. The report records 33 searches and 167 citations. Queries were compared by exact wording after ignoring case and punctuation; cited pages were grouped by site, and site overlap was averaged across pairs of runs.",
+  "limitations": "Four questions, eleven answers and one evening provide a small snapshot. One requested run returned no result and was excluded. Audience, target-site and competitor context may have steered searches and citations. Exact matching understates similarity of intent, and .ca domains are only a geographic proxy. Results describe the tool’s Gemini setup, not ChatGPT, Perplexity or Google AI Mode. The supplied report was not independently replicated here.",
+  "publishedDate": "2026-10-28",
+  "status": "published",
+  "pdf": "/resources/files/same-question-different-searches.pdf",
+  "cover": "/resources/covers/same-question-different-searches.jpg"
+}

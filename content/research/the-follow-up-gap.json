@@ -1,0 +1,45 @@
+{
+  "title": "The Follow-Up Gap",
+  "topic": "Conversational search · Follow-up queries",
+  "pages": 11,
+  "description": "Using my Follow-Up Query Studio to follow three outdoor-gear conversations and observe when Gemini searches again, carries context forward and cites new sites.",
+  "stats": [
+    {
+      "value": "3",
+      "label": "conversations"
+    },
+    {
+      "value": "18",
+      "label": "answers"
+    },
+    {
+      "value": "25",
+      "label": "reported searches"
+    }
+  ],
+  "tool": {
+    "slug": "follow-up-query-studio",
+    "name": "Follow-Up Query Studio",
+    "description": "I upgraded Follow-Up Query Studio from a simulator to a Gemini workflow with Google Search grounding. For this study, it recorded reported searches, cited sources and suggested follow-ups turn by turn, including answers with no reported search."
+  },
+  "sections": [
+    {
+      "heading": "A follow-up did not always trigger another search",
+      "body": "Nine of eighteen answers reported Google searches. Searching occurred on 4 of 6 opening questions, 3 of 6 first follow-ups and 2 of 6 second follow-ups. The other nine answers had no reported searches or citations. This is an observation of the available output, not direct access to the model’s internal reasoning."
+    },
+    {
+      "heading": "Short follow-ups carried the earlier context",
+      "body": "All 15 reported follow-up searches included the earlier topic. For example, a question about where to buy or rent “it” became a search for bear spray in Vancouver. This illustrates why a useful page should state the product, use and location clearly enough to stand on its own."
+    },
+    {
+      "heading": "A first-turn citation did not secure later visibility",
+      "body": "The report found that 86% of sites cited in searched follow-up answers were new to that conversation run. Suggested next questions repeatedly included product care and bear safety. These suggestions are model predictions, not observed user behaviour; they offer hypotheses for content planning that still need testing."
+    }
+  ],
+  "methodology": "I ran three conversations about rain jackets, a first multi-day BC hike and wet-weather insulation, each with three predefined turns and two runs, on October 28, 2026. Follow-Up Query Studio passed earlier turns as short summaries to Gemini 3.1 Flash-Lite with Google Search grounding available. The report records 18 answers, 25 reported searches and 115 citations, with cited pages counted by site. Nine answers reported searches; nine reported neither searches nor citations. A separate screenshot demonstration was excluded from those counts.",
+  "limitations": "This is a small snapshot of three fixed conversations, run twice through one model and one tool. Follow-ups were written in advance, and earlier context was passed as summaries rather than an unrestricted conversation history. The PDF sometimes describes all answers as grounded, while its detailed counts show that only nine reported searches; this summary uses those counts. Suggested follow-ups are predictions, not user behaviour. Results do not establish how other AI-search products behave, and they were not independently replicated here.",
+  "publishedDate": "2026-10-28",
+  "status": "published",
+  "pdf": "/resources/files/the-follow-up-gap.pdf",
+  "cover": "/resources/covers/the-follow-up-gap.jpg"
+}
