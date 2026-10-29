@@ -1,3 +1,4 @@
+import { SiteNavigation } from "../../site-navigation";
 import Markdoc from "@markdoc/markdoc";
 import { SITE_URL, articleSchema, serializeSchema } from "@/lib/schema";
 import type { Metadata } from "next";
@@ -39,7 +40,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const faqSchema = faqs.length ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) } : null;
   const tocHeadings = post.headings.filter((heading) => heading.text !== "Frequently Asked Questions").concat(faqs.length ? [{ id: "faq", text: "Frequently asked questions" }] : []);
   return <main>
-    <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><nav><Link href="/#work">Selected Work</Link><Link href="/apps">Tools</Link><Link className="activeNav" href="/blog">Insights</Link><Link href="/about">About</Link></nav></header>
+    <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><SiteNavigation /></header>
     <article className="articlePage">
       <header className="articleHero wrap">
         <div className="articleHeroKicker"><Link href="/blog"> All insights</Link><span className="articleCategory">{post.category}</span></div>
@@ -64,4 +65,5 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(schema) }}/>{faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(faqSchema) }}/>} 
   </main>;
 }
+
 

@@ -1,3 +1,4 @@
+import { SiteNavigation } from "../site-navigation";
 import Link from "next/link";
 import {Boxes,Grid3X3,Target} from "lucide-react";
 import AppLibrary from "./library-client";
@@ -8,7 +9,7 @@ export const metadata={title:"SEO App Library; Ami Saeednia",description:"A grow
 export default function AppsPage(){return <main>
   <header className="nav wrap">
     <Link className="logo" href="/">SEO<span>Girl</span></Link>
-    <nav><Link href="/case-studies">Case studies</Link><Link href="/">Portfolio</Link><Link href="/research">Research</Link><Link href="/workbooks">Workbooks</Link><Link href="/blog">Insights</Link><Link href="/about">About</Link></nav>
+    <SiteNavigation />
   </header>
   <section className="libraryHero wrap">
     <div className="status"><i/> SEO STRATEGY × AI PRODUCT LAB</div>
@@ -21,3 +22,4 @@ export default function AppsPage(){return <main>
   <AppLibrary/>
   <footer className="compact"><div className="wrap"><div><span className="mini">AMI SAEEDNIA · SEO STRATEGIST</span><h2>Have a search problem worth solving?</h2></div><div className="footerLinks"><a href="mailto:ameneh.saeednia@gmail.com">ameneh.saeednia@gmail.com</a><Link href="/about">About Ami</Link><Link href="/">Back to portfolio</Link></div></div></footer>
 </main>}
+

@@ -1,3 +1,4 @@
+import { SiteNavigation } from "../site-navigation";
 import { blogSchema, serializeSchema } from "@/lib/schema";
 import Link from "next/link";
 import { Clock3, Sparkles } from "lucide-react";
@@ -11,7 +12,7 @@ export default function BlogPage() {
   const featured = posts.find((post) => post.slug === "query-fan-out-explained") || posts[0];
   const articles = posts.filter((post) => post.slug !== featured?.slug);
   return <main><script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeSchema(blogSchema)}}/>
-    <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><nav><Link href="/case-studies">Case studies</Link><Link href="/#work">Selected Work</Link><Link href="/research">Research</Link><Link href="/workbooks">Workbooks</Link><Link href="/apps">Tools</Link><Link className="activeNav" href="/blog">Insights</Link><Link href="/about">About</Link></nav></header>
+    <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><SiteNavigation /></header>
     <section className="blogHero wrap"><div><span className="status"><i/> SEO STRATEGY × PRACTICAL RESEARCH</span><h1>Search thinking,<br/><em>made useful.</em></h1></div><p>Field notes on entity SEO, natural language processing, AI visibility, E-E-A-T, semantic systems, and the decisions behind sustainable search growth.</p></section>
     {featured && <section className="featuredArticle wrap"><div className="featureVisual" aria-hidden="true"><span>{String(featured.number).padStart(2,"0")}</span><Sparkles size={46}/><b>AI</b><div className="signalLines"><i/><i/><i/></div></div><article><span className="articleCategory">{featured.category}</span><h2>{featured.title}</h2><p>{featured.description}</p><div className="articleMeta"><span>{featured.date}</span><span><Clock3 size={14}/>{readingTime(featured)}</span></div><Link href={`/blog/${featured.slug}`}>Read the article </Link></article></section>}
     <section className="blogIndex wrap"><div className="blogToolbar"><div><span className="mini">{posts.length} PUBLISHED INSIGHTS</span><h2>Ideas you can act on.</h2></div><div className="topicPills"><span>Entity SEO</span><span>NLP</span><span>AI visibility</span><span>E-E-A-T</span></div></div>
@@ -21,3 +22,4 @@ export default function BlogPage() {
     <footer><div className="wrap"><div><span className="mini">AMI SAEEDNIA · SEO / GEO STRATEGIST</span><h2>Let’s build something<br/>search can understand.</h2></div><div className="footerLinks"><a href="mailto:ameneh.saeednia@gmail.com">ameneh.saeednia@gmail.com</a><a href="https://www.linkedin.com/in/ameneh-saeednia/">LinkedIn</a><Link href="/apps">App library</Link></div></div></footer>
   </main>;
 }
+
