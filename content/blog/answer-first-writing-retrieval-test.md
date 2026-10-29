@@ -1,13 +1,15 @@
 ---
-title: 'Does Answer-First Writing Improve Retrieval? Results from My Controlled Test'
-status: draft
+title: Does Answer-First Writing Improve Retrieval? Results from My Controlled Test
+status: published
 publishedDate: 2026-10-29
 metaTitle: 'Answer-First Writing vs Short Sections: My Retrieval Test'
-description: 'I compared five rewrite approaches across ten pages, 49 questions and four retrieval methods. Short self-contained sections performed more consistently than answer-first writing alone in this controlled test.'
+description: >-
+  I compared five rewrite approaches across ten pages, 49 questions and four
+  retrieval methods. Short self-contained sections performed more consistently
+  than answer-first writing alone in this controlled test.
 category: FIELD NOTES
 targetQuery: answer-first writing passage retrieval experiment
 ---
-
 “Put the answer first” is easy advice to apply. It is also easy to repeat without asking what outcome it is supposed to improve.
 
 Does it help a reader find the answer? Does it improve retrieval of the page? Does it help a system select the right passage? Does it increase the chance of a citation in a generated answer?
