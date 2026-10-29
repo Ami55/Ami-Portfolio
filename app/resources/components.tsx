@@ -2,10 +2,11 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { getResources, type Resource, type ResourceKind } from "@/lib/resources";
 import s from "./resources.module.css";
+import { apps } from "../apps/app-data";
 import { SiteFooter } from "./site-footer";
 
-export const labels = { research: "Research", workbooks: "Workbooks" };
-export function ResourceShell({ kind, children }: { kind: ResourceKind; children: ReactNode }) {
+export const labels = { research: "Research", workbooks: "Workbooks", apps: "Tools" };
+export function ResourceShell({ kind, children }: { kind: ResourceKind | "apps"; children: ReactNode }) {
   return <div className={s.shell}><header className={s.header}>
     <Link className={s.logo} href="/">SEO<span>Girl</span></Link>
     <nav className={s.nav} aria-label="Main navigation">{[["/", "Portfolio"], ["/case-studies", "Case studies"], ["/research", "Research"], ["/workbooks", "Workbooks"], ["/apps", "Tools"], ["/blog", "Insights"], ["/about", "About"]].map(([href, label]) => <Link key={href} href={href} aria-current={href === `/${kind}` ? "page" : undefined}>{label}</Link>)}</nav>
@@ -28,10 +29,12 @@ export function ResourceIndex({ kind }: { kind: ResourceKind }) {
   </ResourceShell>;
 }
 export function ResourceDetail({ entry, kind }: { entry: Resource; kind: ResourceKind }) {
+  const toolApp = entry.tool ? apps.find(app => app.title === entry.tool?.name) : undefined;
   return <ResourceShell kind={kind}><nav className={s.breadcrumb} aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href={`/${kind}`}>{labels[kind]}</Link><span>/</span><span>{entry.title}</span></nav>
     <section className={s.detailHero}><div><p className={s.eyebrow}>{kind === "research" ? "Independent study" : "Practical workbook"} · {entry.topic}</p><h1>{entry.title}</h1><p className={s.intro}>{entry.description}</p><p className={s.meta}>By Ameneh Saeednia · <time dateTime={entry.publishedDate}>{new Date(entry.publishedDate + "T12:00:00Z").toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })}</time>{entry.pages ? ` · ${entry.pages} pages` : ""}</p>{entry.pdf && <a className={s.button} href={entry.pdf} download>Download {kind === "research" ? "study" : "workbook"} <span>PDF</span></a>}</div>{entry.cover && <div className={s.bookFrame}><img src={entry.cover} alt={`Cover of ${entry.title}`} width="600" height="780" className={s.detailCover} /></div>}</section>
     {entry.stats.length > 0 && <div className={s.stats}>{entry.stats.map((stat, i) => <div key={i}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>}
-    <div className={s.contentGrid}><article className={s.article}><p className={s.eyebrow}>{kind === "research" ? "Inside the research" : "Inside the workbook"}</p>{entry.sections.map((section, i) => <section key={i}><h2>{section.heading}</h2>{section.body.split(/\n\s*\n/).map((paragraph, j) => <p key={j}>{paragraph}</p>)}</section>)}</article><aside className={s.method}><section><h2>{kind === "research" ? "How I approached it" : "How to use it"}</h2><p>{entry.methodology}</p></section><section><h2>Scope & limitations</h2><p>{entry.limitations}</p></section><p className={s.independent}>Independent work by SEO Girl. The brands discussed are research subjects, not clients or endorsers of these studies.</p>{entry.pdf && <a href={entry.pdf} target="_blank" rel="noopener noreferrer">Read the full PDF</a>}</aside></div>
+    <div className={s.contentGrid}><article className={s.article}>{entry.tool && <section className={s.toolPanel} aria-labelledby="study-tool"><p className={s.eyebrow}>Tool behind the study</p><h2 id="study-tool"><Link href={`/apps/${entry.tool.slug}`}>{entry.tool.name}</Link></h2><p>{entry.tool.description}</p><Link href={`/apps/${entry.tool.slug}`}>Explore the tool</Link>{toolApp && !toolApp.sourceOnly && <a href={toolApp.url} target="_blank" rel="noopener noreferrer">Launch app</a>}</section>}<p className={s.eyebrow}>{kind === "research" ? "Inside the research" : "Inside the workbook"}</p>{entry.sections.map((section, i) => <section key={i}><h2>{section.heading}</h2>{section.body.split(/\n\s*\n/).map((paragraph, j) => <p key={j}>{paragraph}</p>)}</section>)}</article><aside className={s.method}><section><h2>{kind === "research" ? "How I approached it" : "How to use it"}</h2><p>{entry.methodology}</p></section><section><h2>Scope & limitations</h2><p>{entry.limitations}</p></section><p className={s.independent}>Independent work by SEO Girl. The brands discussed are research subjects, not clients or endorsers of these studies.</p>{entry.pdf && <a href={entry.pdf} target="_blank" rel="noopener noreferrer">Read the full PDF</a>}</aside></div>
     <section className={s.crossLink}><h2>Keep exploring.</h2><Link href={`/${kind}`}>All {labels[kind].toLowerCase()}</Link><Link href={kind === "research" ? "/workbooks" : "/research"}>{kind === "research" ? "Practical workbooks" : "Independent research"}</Link></section>
   </ResourceShell>;
 }
+
