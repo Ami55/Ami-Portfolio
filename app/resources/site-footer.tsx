@@ -20,6 +20,7 @@ export function SiteFooter() {
           <p className={s.label}>Get in touch</p>
           <a href="mailto:ameneh.saeednia@gmail.com" className={s.email}>Email</a>
           <a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/Ami55" target="_blank" rel="noopener noreferrer" style={{ fontSize: "11px", color: "#9da7c1" }}>GitHub</a>
         </div>
       </div>
       <div className={s.bottom}><span>© 2026 Ameneh Saeednia</span><span>SEO Girl · Independent thinking. Practical work.</span></div>
