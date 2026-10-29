@@ -1,0 +1,40 @@
+{
+  "title": "Proof on the Page",
+  "status": "published",
+  "publishedDate": "2026-10-28",
+  "topic": "E-E-A-T · Workbook",
+  "description": "Audit visible trust evidence across an online store and turn the gaps into a practical plan for product pages.",
+  "pages": 8,
+  "pdf": "/resources/files/proof-on-the-page.pdf",
+  "cover": "/resources/covers/proof-on-the-page.jpg",
+  "stats": [
+    {
+      "value": "8",
+      "label": "pages"
+    },
+    {
+      "value": "16",
+      "label": "audit signals"
+    },
+    {
+      "value": "30",
+      "label": "day action plan"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Audit sixteen evidence signals",
+      "body": "Review the home, About, product, returns and contact pages for evidence of experience, expertise, authority and trust using the workbook’s own scoring rubric."
+    },
+    {
+      "heading": "Make proof useful at the point of decision",
+      "body": "Work through founder-story fields, genuine review prompts and product-knowledge checks. Map where certifications, reviews, warranties and other evidence support a shopper’s decision."
+    },
+    {
+      "heading": "Build a thirty-day action plan",
+      "body": "Prioritize gaps by impact, effort and ownership. Use the weekly plan and one-page proof template to document actions and reassess visible evidence."
+    }
+  ],
+  "methodology": "Choose representative store pages, record evidence for each of the sixteen signals, and use the proof-placement matrix to prioritize changes. Validate product facts and obtain permission for names and customer photos.",
+  "limitations": "The sixteen-signal score is an author-created audit aid, not a Google E-E-A-T score or confirmed ranking formula. Evidence visibility does not establish causation, and collapsed content is not necessarily inaccessible to search engines."
+}

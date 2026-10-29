@@ -1,0 +1,40 @@
+{
+  "title": "Absorbed, Not Credited?",
+  "status": "published",
+  "publishedDate": "2026-10-24",
+  "topic": "AI retrieval · Citations",
+  "description": "What visible citations can—and cannot—tell us about AI answers to shopping questions.",
+  "pages": 12,
+  "pdf": "/resources/files/absorbed-not-credited.pdf",
+  "cover": "/resources/covers/absorbed-not-credited.jpg",
+  "stats": [
+    {
+      "value": "18",
+      "label": "AI answers"
+    },
+    {
+      "value": "6",
+      "label": "prompts"
+    },
+    {
+      "value": "53",
+      "label": "credited sources"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Some answers gave no visible credit",
+      "body": "Four answers to the two general prompts in ChatGPT and AI Mode contained no visible citations. That observation describes the interface; it does not reveal how the answer was produced."
+    },
+    {
+      "heading": "Specific questions changed the citation pattern",
+      "body": "Price, location and current-information prompts showed citations in all three sampled tools. For the value-for-money prompt, eight of fourteen links pointed to independent reviewers."
+    },
+    {
+      "heading": "Keep inference separate from observation",
+      "body": "The title raises a question. An uncited answer does not prove training-data absorption, identify an uncredited source, or establish whether retrieval occurred. I would use the findings to design repeated citation tests, not to estimate lost traffic."
+    }
+  ],
+  "methodology": "Six prompts compared across ChatGPT, Google AI Mode and AI Overviews on 24 October 2026 in Vancouver. The report records eighteen answers and fifty-three credited sources.",
+  "limitations": "Visible citations are an incomplete view of a system’s internal process. The original PDF contains interpretations that should be read with this distinction in mind. No browsing traces, training data, traffic or conversion data were available."
+}

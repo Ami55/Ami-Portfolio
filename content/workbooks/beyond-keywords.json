@@ -1,0 +1,40 @@
+{
+  "title": "Beyond Keywords",
+  "status": "published",
+  "publishedDate": "2026-10-24",
+  "topic": "Semantic SEO · Workbook",
+  "description": "Turn shopper questions into a practical semantic SEO plan for one category and its products.",
+  "pages": 10,
+  "pdf": "/resources/files/beyond-keywords.pdf",
+  "cover": "/resources/covers/beyond-keywords.jpg",
+  "stats": [
+    {
+      "value": "10",
+      "label": "pages"
+    },
+    {
+      "value": "1",
+      "label": "category to focus on"
+    },
+    {
+      "value": "30",
+      "label": "day action plan"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Map the questions behind the purchase",
+      "body": "Start with a category and three to five products. Use the prompt and journey worksheet to identify what a shopper needs to know before comparing options."
+    },
+    {
+      "heading": "Connect questions, attributes and pages",
+      "body": "Build an entity-and-attribute map, assign a clear job to each page, and identify where first-hand knowledge would make an answer more useful."
+    },
+    {
+      "heading": "Turn the map into a brief",
+      "body": "Use the tracking, prioritisation and one-page brief exercises to choose an achievable next step. The workbook ends with a thirty-day plan you can adapt to your own site."
+    }
+  ],
+  "methodology": "A practical workbook using Fieldnorth, a fictional outdoor retailer, as an illustrative example. Exercises move from questions and entity mapping to page planning, evidence gathering and prioritisation.",
+  "limitations": "The examples are fictional and do not report client results. Verify all product specifications against your own source data before using them. The workbook is a planning tool, not a promise of search or AI visibility gains."
+}

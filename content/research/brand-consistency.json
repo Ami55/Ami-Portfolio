@@ -1,0 +1,40 @@
+{
+  "title": "Who Are You, Really?",
+  "status": "published",
+  "publishedDate": "2026-10-22",
+  "topic": "Entity clarity · Brand",
+  "description": "Checking whether five Canadian B2B brands were described consistently across search and AI.",
+  "pages": 11,
+  "pdf": "/resources/files/brand-consistency.pdf",
+  "cover": "/resources/covers/brand-consistency.jpg",
+  "stats": [
+    {
+      "value": "5",
+      "label": "brands"
+    },
+    {
+      "value": "4",
+      "label": "identity facts"
+    },
+    {
+      "value": "3 of 5",
+      "label": "founding-year conflicts"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Identity facts can disagree",
+      "body": "The study found conflicting founding years for three of five brands. Even familiar businesses can have multiple versions of their history circulating across search and AI surfaces."
+    },
+    {
+      "heading": "Visibility does not guarantee consistency",
+      "body": "For two brands, Google’s knowledge panel and AI Mode disagreed on a checked fact. A visible panel should not be treated as proof that every surface shares the same entity information."
+    },
+    {
+      "heading": "Start with a factual reference",
+      "body": "A useful next step is a dated, sourced record of founding history, founders, headquarters and leadership. It makes discrepancies easier to investigate without assuming the AI answer is the authority."
+    }
+  ],
+  "methodology": "A comparison of Shopify, Hootsuite, Clio, Unbounce and Jane App on 22 October 2026. Four identity facts were checked across Google knowledge panels, ChatGPT, Google AI Mode and public web sources.",
+  "limitations": "Facts and interfaces can change. These are dated observations, not a statement about current leadership or current search results. Differences may reflect ambiguity in how a founding date or location is defined."
+}

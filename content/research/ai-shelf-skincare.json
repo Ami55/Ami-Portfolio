@@ -1,0 +1,40 @@
+{
+  "title": "The AI Shelf: Skincare",
+  "status": "published",
+  "publishedDate": "2026-10-24",
+  "topic": "AI visibility · Retail",
+  "description": "A comparison of Canadian-brand discovery and skin-need recommendations in AI answers.",
+  "pages": 10,
+  "pdf": "/resources/files/ai-shelf-skincare.pdf",
+  "cover": "/resources/covers/ai-shelf-skincare.jpg",
+  "stats": [
+    {
+      "value": "18",
+      "label": "AI answers"
+    },
+    {
+      "value": "9",
+      "label": "prompts"
+    },
+    {
+      "value": "2",
+      "label": "AI systems"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A category question changes the shortlist",
+      "body": "Canadian indie brands appeared in the Canadian-brand prompt, but not in the sampled skin-need prompts. Being associated with a country is a different visibility opportunity from being associated with a specific customer need."
+    },
+    {
+      "heading": "The evidence around the answer matters",
+      "body": "CeraVe appeared in six of twelve unbranded answers and The Ordinary in five. Ingredients appeared in thirteen of eighteen answers. The study records these patterns without treating them as proof of what caused selection."
+    },
+    {
+      "heading": "Citation behaviour differed",
+      "body": "ChatGPT showed sources in two of nine answers; Google AI Mode showed sources in all nine. That difference is a reason to track mentions and citations separately."
+    }
+  ],
+  "methodology": "Nine prompts run in ChatGPT and Google AI Mode on 24 October 2026. The report compares brand mentions, ingredient language and visible sources across eighteen answers.",
+  "limitations": "This is a limited snapshot, not a market-share estimate or a skincare recommendation. It does not validate health claims or establish which attributes caused an AI system to recommend a brand."
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Entity Clarity",
+  "status": "published",
+  "publishedDate": "2026-10-28",
+  "topic": "Entity SEO · Workbook",
+  "description": "Create one reliable set of brand facts, audit inconsistencies across profiles, and check how AI assistants describe your business.",
+  "pages": 8,
+  "pdf": "/resources/files/entity-clarity.pdf",
+  "cover": "/resources/covers/entity-clarity.jpg",
+  "stats": [
+    {
+      "value": "8",
+      "label": "pages"
+    },
+    {
+      "value": "1",
+      "label": "canonical facts sheet"
+    },
+    {
+      "value": "4",
+      "label": "quarterly reviews per year"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Define your canonical facts",
+      "body": "Record your legal and brand names, founders, headquarters, leadership and services. Define ambiguous facts such as the founding date and attach supporting sources."
+    },
+    {
+      "heading": "Audit and align your sources",
+      "body": "Compare your website, structured data, company profiles and AI answers in a consistency matrix. Start with sources you control and record ownership for remaining corrections."
+    },
+    {
+      "heading": "Keep the facts current",
+      "body": "Use the AI answer log, change-trigger checklist and one-page entity brief to plan monthly checks and quarterly reviews."
+    }
+  ],
+  "methodology": "Start with the canonical facts sheet, then complete the source matrix and correction list. Have the appropriate company fact owners approve changes, and repeat the same AI questions under recorded conditions.",
+  "limitations": "This is an independent planning workbook, not a guarantee that search engines or AI systems will adopt your facts. Verify claims against reliable sources and follow each platform’s current editing and conflict-of-interest rules."
+}

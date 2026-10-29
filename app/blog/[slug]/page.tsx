@@ -3,7 +3,7 @@ import { SITE_URL, articleSchema, serializeSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowUpRight, Clock3 } from "lucide-react";
+import { Clock3 } from "lucide-react";
 import { getAllPosts, getPost, inlineMarkdown, readingTime, relatedAppFor } from "@/lib/blog";
 import ArticleToc from "./article-toc";
 import ArticleContent from "./article-content";
@@ -42,7 +42,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><nav><Link href="/#work">Selected Work</Link><Link href="/apps">Tools</Link><Link className="activeNav" href="/blog">Insights</Link><Link href="/about">About</Link></nav></header>
     <article className="articlePage">
       <header className="articleHero wrap">
-        <div className="articleHeroKicker"><Link href="/blog"><ArrowLeft size={16}/> All insights</Link><span className="articleCategory">{post.category}</span></div>
+        <div className="articleHeroKicker"><Link href="/blog"> All insights</Link><span className="articleCategory">{post.category}</span></div>
         <h1>{post.title}</h1><p>{post.description}</p>
         <div className="articleByline"><div><b>AS</b><span><strong>Ami Saeednia</strong><small>SEO / GEO Strategist</small></span></div><div><span>{post.date}</span><span><Clock3 size={14}/>{readingTime(post)}</span></div></div>
       </header>
@@ -51,16 +51,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className="articleProse">
           <ArticleContent body={articleBody}/>
           {faqs.length > 0 && <section className="articleFaq" id="faq"><span>FREQUENTLY ASKED QUESTIONS</span><h2>Questions about {post.targetQuery}</h2>{faqs.map((faq, index) => <details key={faq.question} open={index === 0}><summary>{faq.question}</summary><p>{inlineMarkdown(faq.answer)}</p></details>)}</section>}
-          {relatedApp && <aside className="relatedTool"><div><span>RELATED SEO APP</span><h2>{relatedApp.name}</h2><p>{relatedApp.description}</p></div><a href={relatedApp.url} target="_blank" rel="noreferrer">Explore the live tool <ArrowUpRight size={17}/></a></aside>}
+          {relatedApp && <aside className="relatedTool"><div><span>RELATED SEO APP</span><h2>{relatedApp.name}</h2><p>{relatedApp.description}</p></div><a href={relatedApp.url} target="_blank" rel="noreferrer">Explore the live tool </a></aside>}
         </div>
       </div>
     </article>
     <section className="articleAuthor wrap" aria-label="About the author">
       <img src="/ami-saeednia-profile-bw.png" alt="Ami Saeednia"/>
-      <div><span>WRITTEN BY</span><h2>Ami Saeednia</h2><strong>SEO / GEO Strategist · Search systems · AI visibility</strong><p>I turn technical SEO, entity strategy, content systems, and AI-search research into focused decisions and practical tools teams can use.</p><div><Link href="/about">About Ami <ArrowUpRight size={16}/></Link><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={16}/></a></div></div>
+      <div><span>WRITTEN BY</span><h2>Ami Saeednia</h2><strong>SEO / GEO Strategist · Search systems · AI visibility</strong><p>I turn technical SEO, entity strategy, content systems, and AI-search research into focused decisions and practical tools teams can use.</p><div><Link href="/about">About Ami </Link><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn </a></div></div>
     </section>
-    <section className="relatedInsights"><div className="wrap"><span className="mini">RELATED INSIGHTS</span><div className="relatedHeader"><h2>Continue exploring.</h2><Link href="/blog">View all insights →</Link></div><div className="relatedGrid">{related.map((item) => <article key={item.slug}><span className="articleCategory">{item.category}</span><h3>{item.title}</h3><p>{item.description}</p><Link href={`/blog/${item.slug}`}>Read article <ArrowUpRight size={16}/></Link></article>)}</div></div></section>
-    <section className="nextArticle"><div className="wrap"><span>NEXT INSIGHT</span><h2>{next.title}</h2><Link href={`/blog/${next.slug}`}>Read next insight →</Link></div></section>
+    <section className="relatedInsights"><div className="wrap"><span className="mini">RELATED INSIGHTS</span><div className="relatedHeader"><h2>Continue exploring.</h2><Link href="/blog">View all insights</Link></div><div className="relatedGrid">{related.map((item) => <article key={item.slug}><span className="articleCategory">{item.category}</span><h3>{item.title}</h3><p>{item.description}</p><Link href={`/blog/${item.slug}`}>Read article </Link></article>)}</div></div></section>
+    <section className="nextArticle"><div className="wrap"><span>NEXT INSIGHT</span><h2>{next.title}</h2><Link href={`/blog/${next.slug}`}>Read next insight</Link></div></section>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(schema) }}/>{faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(faqSchema) }}/>} 
   </main>;
 }
+

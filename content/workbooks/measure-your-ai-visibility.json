@@ -1,0 +1,40 @@
+{
+  "title": "Measure Your AI Visibility",
+  "status": "published",
+  "publishedDate": "2026-10-28",
+  "topic": "AI visibility · Workbook",
+  "description": "Build a repeatable prompt library, log brand mentions and citations, and turn observed gaps into an action plan.",
+  "pages": 8,
+  "pdf": "/resources/files/measure-your-ai-visibility.pdf",
+  "cover": "/resources/covers/measure-your-ai-visibility.jpg",
+  "stats": [
+    {
+      "value": "8",
+      "label": "pages"
+    },
+    {
+      "value": "12–20",
+      "label": "suggested prompts"
+    },
+    {
+      "value": "6",
+      "label": "visibility measures"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Build a prompt library around real questions",
+      "body": "Write twelve to twenty prompts spanning general advice, specific needs, current information, brand questions and community perspectives."
+    },
+    {
+      "heading": "Record answers and compare six measures",
+      "body": "Log tool, date, location and sign-in conditions alongside brands, citations and factual accuracy. Review mention rate, first mentions, credit rate, source mix, description and accuracy."
+    },
+    {
+      "heading": "Turn patterns into priorities",
+      "body": "Use the gap-to-action worksheet and monthly scorecard to assign owners and next steps. Review patterns across repeated runs and revisit the prompt library quarterly."
+    }
+  ],
+  "methodology": "Run the same prompt set under documented conditions and save every answer, including unfavorable results. Use the workbook’s stated denominators consistently when comparing periods, and log tool or version changes.",
+  "limitations": "Results are a sample of variable AI answers, not stable rankings or causal evidence. Visible citations show attribution; they do not reveal every retrieved or training source. Missing citations do not prove that content was absorbed without credit."
+}
