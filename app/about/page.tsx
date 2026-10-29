@@ -1,3 +1,4 @@
+import { SiteFooter } from "../resources/site-footer";
 import { SiteNavigation } from "../site-navigation";
 import { profileSchema, serializeSchema } from "@/lib/schema";
 import Link from "next/link";
@@ -42,5 +43,6 @@ export default function AboutPage(){return <main><script type="application/ld+js
   <section className="journeySection"><div className="wrap"><div className="journeyIntro"><span className="mini">THE ROAD HERE</span><h2>From studying systems<br/>to shaping search.</h2></div><div className="journeyRoad">{journey.map((step,index)=><article className="journeyStop" key={step.place+step.period}><div className="journeyMarker"><span>{String(index+1).padStart(2,"0")}</span><i aria-hidden="true"><step.Icon size={26} strokeWidth={1.7}/></i></div><div className="journeyContent"><div className="journeyMeta"><span>{step.period}</span><strong>{step.place}</strong></div><h3>{step.role}</h3><p>{step.copy}</p></div></article>)}</div></div></section>
   <section className="strengths wrap"><div className="strengthIntro"><span className="mini">HOW I WORK NOW</span><h2>Strategy that connects<br/>the whole system.</h2><p>My work sits at the intersection of technical SEO, content, information retrieval, product thinking, and AI discovery.</p></div><div className="strengthGrid">{strengths.map(({title,copy,Icon},index)=><article key={title}><span>{String(index+1).padStart(2,"0")}</span><i aria-hidden="true"><Icon size={25} strokeWidth={1.8}/></i><h3>{title}</h3><p>{copy}</p></article>)}</div></section>
   <section className="aboutNumbers wrap" aria-label="Career highlights">{([["9+","Years in SEO",BriefcaseBusiness],["15+","International markets",Globe2],["40K+","Sitemap gaps identified",Search],["37","Live methodology apps",BookOpen]] as const).map(([value,label,Icon])=><div key={String(label)}><i aria-hidden="true"><Icon size={25} strokeWidth={1.8}/></i><b>{value}</b><span>{label}</span></div>)}</section>
-  <footer className="compact"><div className="wrap"><div><span className="mini">AMI SAEEDNIA · SEO STRATEGIST</span><h2>Let’s make complex search work usable.</h2></div><div className="footerLinks"><a href="mailto:ameneh.saeednia@gmail.com">ameneh.saeednia@gmail.com</a><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn</a><Link href="/apps">Explore the tools</Link><a href="https://github.com/Ami55" target="_blank" rel="noopener noreferrer" className="githubLink">GitHub</a></div></div></footer>
+  <SiteFooter variant="full" heading="Let’s make complex search work usable." />
 </main>}
+
