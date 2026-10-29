@@ -13,10 +13,11 @@ export const person = {
   name: "Ami Saeednia",
   alternateName: "Ameneh Saeednia",
   url: `${SITE_URL}/about`,
-  image: `${SITE_URL}/ami-saeednia-profile-bw.png`,
+  image: `${SITE_URL}/ami-saeednia-bio.jpg`,
   jobTitle: "SEO / GEO Strategist",
   sameAs: [
     "https://www.linkedin.com/in/ameneh-saeednia/",
+    "https://github.com/Ami55",
     "https://orcid.org/0000-0002-8812-2306",
     "https://protectedbyalfie.com/team/ameneh-saeednia",
   ],
