@@ -1,7 +1,7 @@
 ---
 title: 'When Gemini Searched Again: Findings from 18 Conversational Answers'
 status: published
-publishedDate: 2026-10-29
+publishedDate: 2026-10-20
 metaTitle: 'Conversational AI Search: My 18-Answer Follow-Up Study'
 description: >-
   I tested three conversations in my Follow-Up Query Studio to see when Gemini
