@@ -14,5 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const resources = (["research", "workbooks"] as const).flatMap(kind => getResources(kind).map(({ slug }) => ({ url: `${siteUrl}/${kind}/${slug}` })));
-  return [...pages, ...posts, ...resources];
+  const tools = getResources("research").flatMap(entry => entry.tool ? [{ url: `${siteUrl}/apps/${entry.tool.slug}` }] : []);
+  return [...pages, ...posts, ...resources, ...tools];
 }
+
