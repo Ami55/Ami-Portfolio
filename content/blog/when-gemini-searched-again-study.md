@@ -1,13 +1,15 @@
 ---
 title: 'When Gemini Searched Again: Findings from 18 Conversational Answers'
-status: draft
+status: published
 publishedDate: 2026-10-29
 metaTitle: 'Conversational AI Search: My 18-Answer Follow-Up Study'
-description: 'I tested three conversations in my Follow-Up Query Studio to see when Gemini searched again, how earlier context appeared in reported queries, and what changed in the cited sources.'
-category: FIELD NOTES
+description: >-
+  I tested three conversations in my Follow-Up Query Studio to see when Gemini
+  searched again, how earlier context appeared in reported queries, and what
+  changed in the cited sources.
+category: AI VISIBILITY
 targetQuery: conversational AI search follow-up questions study
 ---
-
 A follow-up question can be only six words long and still contain a complicated search brief.
 
 “Where can I buy or rent it in Vancouver?”
