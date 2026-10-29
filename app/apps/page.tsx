@@ -1,3 +1,4 @@
+import { SiteFooter } from "../resources/site-footer";
 import { SiteNavigation } from "../site-navigation";
 import Link from "next/link";
 import {Boxes,Grid3X3,Target} from "lucide-react";
@@ -20,5 +21,6 @@ export default function AppsPage(){return <main>
     {([[String(apps.length),"Apps in the collection",Boxes],[String(categories.length-1),"Problem spaces",Grid3X3],["01","Goal: clearer action",Target]] as const).map(([value,label,Icon])=><div key={String(label)}><i aria-hidden="true"><Icon size={21} strokeWidth={1.8}/></i><p><b>{value}</b><span>{label}</span></p></div>)}
   </section>
   <AppLibrary/>
-  <footer className="compact"><div className="wrap"><div><span className="mini">AMI SAEEDNIA · SEO STRATEGIST</span><h2>Have a search problem worth solving?</h2></div><div className="footerLinks"><a href="mailto:ameneh.saeednia@gmail.com">ameneh.saeednia@gmail.com</a><Link href="/about">About Ami</Link><Link href="/">Back to portfolio</Link><a href="https://github.com/Ami55" target="_blank" rel="noopener noreferrer" className="githubLink">GitHub</a></div></div></footer>
+  <SiteFooter variant="full" heading="Have a search problem worth solving?" />
 </main>}
+
