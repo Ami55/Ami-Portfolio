@@ -9,6 +9,7 @@ export type Resource = {
   stats: { value: string; label: string }[];
   sections: { heading: string; body: string }[];
   methodology: string; limitations: string;
+  tool?: { slug: string; name: string; description: string };
 };
 export function getResources(kind: ResourceKind): Resource[] {
   const directory = path.join(process.cwd(), "content", kind);
@@ -22,3 +23,4 @@ export function getResources(kind: ResourceKind): Resource[] {
 export function getResource(kind: ResourceKind, slug: string) {
   return getResources(kind).find(entry => entry.slug === slug);
 }
+
