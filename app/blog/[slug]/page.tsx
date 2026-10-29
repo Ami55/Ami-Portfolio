@@ -39,7 +39,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const schema = articleSchema(post, images);
   const faqSchema = faqs.length ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) } : null;
   const tocHeadings = post.headings.filter((heading) => heading.text !== "Frequently Asked Questions").concat(faqs.length ? [{ id: "faq", text: "Frequently asked questions" }] : []);
-  return <main>
+  return <><main>
     <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><SiteNavigation /></header>
     <article className="articlePage">
       <header className="articleHero wrap">
@@ -63,5 +63,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <section className="relatedInsights"><div className="wrap"><span className="mini">RELATED INSIGHTS</span><div className="relatedHeader"><h2>Continue exploring.</h2><Link href="/blog">View all insights</Link></div><div className="relatedGrid">{related.map((item) => <article key={item.slug}><span className="articleCategory">{item.category}</span><h3>{item.title}</h3><p>{item.description}</p><Link href={`/blog/${item.slug}`}>Read article </Link></article>)}</div></div></section>
     <section className="nextArticle"><div className="wrap"><span>NEXT INSIGHT</span><h2>{next.title}</h2><Link href={`/blog/${next.slug}`}>Read next insight</Link></div></section>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(schema) }}/>{faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(faqSchema) }}/>} 
-  </main>;
+  </main>
+    <footer><div className="wrap"><div><span className="mini">AMI SAEEDNIA · SEO STRATEGIST</span><h2>Let’s build something<br/>search can understand.</h2><nav aria-label="Footer resources" style={{display:"flex",gap:"20px",flexWrap:"wrap",fontSize:"14px",marginTop:"24px"}}><Link href="/case-studies">Case studies</Link><Link href="/research">Research</Link><Link href="/workbooks">Workbooks</Link></nav></div><div className="footerLinks"><a href="mailto:ameneh.saeednia@gmail.com">Email</a><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn</a><Link href="/apps">App library</Link></div></div></footer>
+  </>;
 }
