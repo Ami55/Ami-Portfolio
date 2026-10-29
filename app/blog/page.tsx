@@ -1,3 +1,4 @@
+import { SiteFooter } from "../resources/site-footer";
 import { SiteNavigation } from "../site-navigation";
 import { blogSchema, serializeSchema } from "@/lib/schema";
 import Link from "next/link";
@@ -19,6 +20,7 @@ export default function BlogPage() {
       <BlogGrid posts={articles.map((post) => ({ ...post, read: readingTime(post) }))}/>
     </section>
     <section className="blogCta"><div className="wrap"><span className="mini">NOTES WORTH KEEPING</span><h2>Clearer search decisions;<br/><em>shared regularly.</em></h2><p>No noise. Just practical observations about search systems, AI visibility, and content that earns attention.</p><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">Follow me on LinkedIn </a></div></section>
-    <footer><div className="wrap"><div><span className="mini">AMI SAEEDNIA · SEO / GEO STRATEGIST</span><h2>Let’s build something<br/>search can understand.</h2></div><div className="footerLinks"><a href="mailto:ameneh.saeednia@gmail.com">ameneh.saeednia@gmail.com</a><a href="https://www.linkedin.com/in/ameneh-saeednia/">LinkedIn</a><Link href="/apps">App library</Link><a href="https://github.com/Ami55" target="_blank" rel="noopener noreferrer" className="githubLink">GitHub</a></div></div></footer>
+    <SiteFooter variant="full" />
   </main>;
 }
+
