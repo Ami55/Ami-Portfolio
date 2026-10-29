@@ -1,13 +1,15 @@
 ---
 title: 'Same Prompt, Different Searches: What My Repeated Runs Revealed'
-status: draft
+status: published
 publishedDate: 2026-10-29
 metaTitle: 'Query Fan-Out Variability: My Repeated-Run Experiment'
-description: 'Across 11 completed answers to four outdoor-gear questions, I recorded 33 reported queries and 167 citations. Here is what varied, what persisted, and how I would measure a content change.'
-category: FIELD NOTES
+description: >-
+  Across 11 completed answers to four outdoor-gear questions, I recorded 33
+  reported queries and 167 citations. Here is what varied, what persisted, and
+  how I would measure a content change.
+category: AI VISIBILITY
 targetQuery: query fan-out repeated runs experiment
 ---
-
 If I change a page and an AI answer changes afterwards, did my edit cause the difference?
 
 It is a tempting conclusion. The sequence looks persuasive: publish a clearer explanation, run the prompt again, find a new citation. But before I can interpret that result, I need to know how much the answer changes when I have not edited anything.
