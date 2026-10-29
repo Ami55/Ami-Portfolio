@@ -37,7 +37,7 @@
     }
   ],
   "methodology": "I requested three consecutive runs of four outdoor-gear questions using Query Fan-out Explorer, Gemini and Google Search grounding, with Canada and English context. Eleven of twelve requested runs returned results on October 28, 2026. The report records 33 searches and 167 citations. Queries were compared by exact wording after ignoring case and punctuation; cited pages were grouped by site, and site overlap was averaged across pairs of runs.",
-  "limitations": "Four questions, eleven answers and one evening provide a small snapshot. One requested run returned no result and was excluded. Audience, target-site and competitor context may have steered searches and citations. Exact matching understates similarity of intent, and .ca domains are only a geographic proxy. Results describe the tool’s Gemini setup, not ChatGPT, Perplexity or Google AI Mode. The supplied report was not independently replicated here.",
+  "limitations": "Four questions, eleven answers and one evening provide a small snapshot. One requested run returned no result and was excluded. Audience, target-site and competitor context may have steered searches and citations. Exact matching understates similarity of intent, and .ca domains are only a geographic proxy. Results describe the tool’s Gemini setup, not ChatGPT, Perplexity or Google AI Mode. These findings are limited to the recorded runs.",
   "publishedDate": "2026-10-28",
   "status": "published",
   "pdf": "/resources/files/same-question-different-searches.pdf",
