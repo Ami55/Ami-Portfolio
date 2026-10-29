@@ -57,7 +57,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       </div>
     </article>
     <section className="articleAuthor wrap" aria-label="About the author">
-      <img src="/ami-saeednia-profile-bw.png" alt="Ami Saeednia"/>
+      <img src="/ami-saeednia-bio.jpg" alt="Portrait of Ami Saeednia" width={150} height={170} loading="lazy" style={{ objectPosition: "50% 10%" }}/>
       <div><span>WRITTEN BY</span><h2>Ami Saeednia</h2><strong>SEO / GEO Strategist · Search systems · AI visibility</strong><p>I turn technical SEO, entity strategy, content systems, and AI-search research into focused decisions and practical tools teams can use.</p><div><Link href="/about">About Ami </Link><a href="https://www.linkedin.com/in/ameneh-saeednia/" target="_blank" rel="noreferrer">LinkedIn </a></div></div>
     </section>
     <section className="relatedInsights"><div className="wrap"><span className="mini">RELATED INSIGHTS</span><div className="relatedHeader"><h2>Continue exploring.</h2><Link href="/blog">View all insights</Link></div><div className="relatedGrid">{related.map((item) => <article key={item.slug}><span className="articleCategory">{item.category}</span><h3>{item.title}</h3><p>{item.description}</p><Link href={`/blog/${item.slug}`}>Read article </Link></article>)}</div></div></section>
@@ -65,5 +65,3 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(schema) }}/>{faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeSchema(faqSchema) }}/>} 
   </main>;
 }
-
-
