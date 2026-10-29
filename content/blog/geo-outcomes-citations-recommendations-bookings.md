@@ -114,6 +114,40 @@ This is how I would assign the work:
 
 These responsibilities overlap. The table is a way to identify who needs to contribute.
 
+## What my studies can actually measure
+
+My own research has made these distinctions more concrete. I now want the observation and its measurement source written beside every visibility claim.
+
+A **reported search** is a query exposed by the tool's search metadata. It is not a full transcript of hidden reasoning. In [The Follow-Up Gap](/research/the-follow-up-gap), 18 answers produced 25 reported searches, but only nine answers reported searches and citations. Search being available did not mean a new search was reported on every turn.
+
+A **visible citation** is a displayed source link. [Absorbed, Not Credited?](/research/absorbed-not-credited) recorded 53 credited sources across 18 answers. Four answers to the two general questions in ChatGPT and AI Mode displayed none. That does not identify an uncredited source or prove that the answer came entirely from model memory.
+
+A **brand mention** records presence. It may be an example, a comparison, a warning or an incidental reference. My [apparel](/research/ai-shelf-sustainable-apparel) and [skincare](/research/ai-shelf-skincare) studies show why I would classify the role instead of treating every appearance as a recommendation. The apparel matching could also identify brands through links; that belongs in the method.
+
+A **recommendation** needs an explicit interpretation rule. I would record whether the brand or offer is presented as suitable for the request, the reason given, and the qualifications attached. A named hotel is not necessarily an eligible room offer, and an eligible offer is not a reservation.
+
+A **visit or conversion** needs an appropriate analytics record. None of those answer studies measured sales. A displayed link does not establish a click, and an order is not attributable to an AI answer merely because the business also appeared in one.
+
+## An annotated answer: separate the observations
+
+Consider this invented answer:
+
+> Harbour Example is one option for a private city tour. Its four-hour departure may fit your port visit, subject to confirming pickup and the boarding deadline. The itinerary page describes the route.
+
+Suppose the interface displays a source link beside the final sentence. I would annotate the company name as a mention; “one option” as a qualified recommendation; the itinerary link as a citation; and the duration and suitability statements as claims requiring verification. I would record reported searches only if the tool exposed them, and a booking only if the booking system established one.
+
+This text example is not an observed answer. Its purpose is to show why a single “AI visibility” total loses useful information.
+
+A missing field also needs a precise label. “No reported search,” “no visible citation,” “brand not named” and “no analytics available” describe different states. They should not all become zero visibility.
+
+## Variation belongs in the measurement plan
+
+In [Same Question, Different Searches](/research/same-question-different-searches), eleven completed answers returned 33 reported query instances. The cited-site overlap varied by prompt. That is one reason I would repeat a test before interpreting a single new citation as an effect of a page edit.
+
+My first report would preserve the prompt, platform, date, account conditions, completed or missing run status, answer text, source URLs, brand role and support for important claims. I would keep tool metadata separate from the displayed answer.
+
+I would then report the observed counts and what remains unknown. The benefit is a more specific recommendation: correct an unsupported fact, supply a missing offer condition, improve a useful passage or investigate a recurring source gap. It is harder to justify a vague “GEO fix” when the measured problem is stated clearly.
+
 ## The name becomes useful when it clarifies the brief
 
 I would not reject “GEO” if it helps a company recognize the work and bring the right people together.

@@ -90,6 +90,52 @@ I would ask the engineering team how it handles duplicate requests, how it retri
 
 The interface should distinguish a submitted request, a pending reservation, and a confirmed booking. A successful payment step alone should not be used as a substitute for the supplier’s booking status.
 
+## A worked offer check for a private tour
+
+Imagine a family choosing a Christmas city tour. This is an illustrative requirements exercise, not a live offer or an implemented agent integration.
+
+Before presenting a bookable option, I would need the date, local departure time, party size and relevant child ages. The system would identify the actual departure or request option, rather than rely on the general tour's name.
+
+The offer would need a total price and currency, with mandatory charges and payment timing explained. “From” pricing is useful during discovery but cannot stand in for the total applicable to this party.
+
+I would then check the conditions that can invalidate the match: age rules, physical demands, transport inclusion, pickup coverage and cancellation cutoff. The cutoff needs a date, time and time zone where applicable. A translated summary must preserve the meaning of the original terms.
+
+Finally, I would establish the confirmation model. Is the departure instantly confirmable, or does a supplier need to accept a request? If it is a request, the interface should say that clearly before the traveller commits.
+
+A product page may explain these fields. A current offer response must establish which values apply now. Neither layer should quietly borrow a condition from another departure, variant or rate.
+
+## Booking readiness needs an information contract
+
+For an integration proposal, I would ask product, engineering and supplier operations to agree on what a valid offer contains.
+
+The record should identify the provider, product, option, date, party, price, applicable terms, availability state and last validation time. It should also distinguish a value that is unavailable from one that is genuinely not applicable.
+
+If a pickup field is empty, the agent should not infer that pickup is included. If walking conditions have not been verified, it should not convert missing detail into an accessibility claim.
+
+I would document which changes invalidate the current offer. A different date, guest allocation or selected option may require revalidation. The selected identifiers need to remain attached to the conditions the traveller approved.
+
+This is the travel-specific work behind being machine-selectable and machine-orderable. It is not completed by adding a Product record or a generic FAQ.
+
+## The campaign concept illustrates discovery, not a finished integration
+
+My [Christmas travel campaign concept](/case-studies/christmas-travel-concept) connects destination discovery, a practical three-day plan and relevant tour choices. I proposed the campaign to my manager, but it was not implemented.
+
+It is useful here as a journey-design example. Someone might first explore a destination, request a planner, then compare experiences that suit the plan. The landing-page concepts make those transitions visible.
+
+They do not demonstrate working live inventory, an agent checkout or measured booking performance. To make that journey actionable for an agent, I would still need the current-data contract, the booking interface and the failure-handling tests described here.
+
+Keeping that boundary explicit lets the concept support a portfolio discussion without being presented as a deployed commerce system.
+
+## Match the interface to what the platform actually supports
+
+The retail feed, schema and checkout ecosystem does not map automatically onto hotel or tour inventory. I would verify the supported service type, partner requirements and transaction flow for the specific integration before recommending it.
+
+For example, [Booking.com's documented order flow](https://developers.booking.com/demand/docs/orders-api/order-preview-create) separates preview from order creation. Preview validates a selection and returns conditions; it does not itself establish a reservation. That is an implementation example from its documented services, not a statement that the same endpoint supports every tour supplier.
+
+Google's hotel room bundles similarly distinguish room features, rate conditions and itinerary-specific pricing. Those distinctions help define a hotel integration; they are not a universal tour-feed specification.
+
+The consulting recommendation should name what can be implemented now, what requires a partner integration and what remains a proposed capability. Otherwise, “agent ready” becomes a label without an operational test.
+
 ## Audit the whole journey
 
 My initial test set would include a price change, unavailable inventory, an occupancy change, a pending confirmation, and an interrupted response.

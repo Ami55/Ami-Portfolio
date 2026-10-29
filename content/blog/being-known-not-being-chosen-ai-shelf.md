@@ -134,6 +134,32 @@ Some of the original report language is deliberately punchy. For implementation,
 
 That restraint improves the recommendation. It lets me propose a testable next step instead of presenting an observation as a ranking factor.
 
+## A missing mention does not diagnose the model's knowledge
+
+There is another inference I would avoid: “The brand did not appear, so the model does not know it.”
+
+The [Inside-Out research summarized by Google Research](https://research.google/pubs/inside-out-hidden-factual-knowledge-in-llms/) examines a distinction between internally encoded factual knowledge and what models express. Its case study uses open-weight models and closed-book factual questions. It is not a test of commercial shopping recommendations or these brands.
+
+The relevance to my audit is caution about the inference, not a new explanation for the shelf. The paper cannot tell me that an absent brand was internally known, retrieved and rejected, or omitted for any particular reason.
+
+My own studies observe answers and displayed sources. They do not expose model parameters. A brand's absence is a result to record; its hidden cause remains unresolved unless another method supplies evidence.
+
+## How I would investigate silence without inventing a mechanism
+
+First, I would repeat the prompt under recorded conditions. A one-off absence and a recurring absence are different observations, although repetition alone still cannot expose internal knowledge.
+
+Second, I would vary the wording while preserving the underlying need, documenting which constraints remain fixed. If I change price, location and audience together, I cannot attribute the difference to one of them.
+
+Third, where the tool supports it, I would compare clearly labelled search-enabled and other available conditions. I would not assume the settings in one app reproduce the consumer product. Any comparison needs the actual configuration recorded.
+
+Fourth, I would separate accurate characterization from recommendation. The system may describe the brand correctly when asked directly without including it in a need-based shortlist. That is useful evidence about output behaviour, not proof of why selection occurred.
+
+Finally, I would compare the desired association with verifiable product facts and the available public descriptions. If the request is a poor fit, absence may be appropriate. If it is a credible fit but evidence is missing or unclear, that gives the business a concrete issue to investigate.
+
+None of these steps promises to reveal a hidden ranking formula. They help keep “not named in this answer” from turning into “unknown to every model,” “penalized,” or “excluded because of one missing schema field.”
+
+I would keep the test set small enough that a person can review the actual answers. The distinction between visibility, correct identity and appropriate selection is too important to outsource entirely to a single mention score.
+
 ## The next question I would put beside the dashboard
 
 After these studies, I would not stop at “Are we appearing?” I would ask: “For which decisions are we being considered, and does the evidence justify that association?”

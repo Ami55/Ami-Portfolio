@@ -134,6 +134,20 @@ A generic trust banner cannot answer those questions. Neither can a long company
 
 Where a fact changes frequently, I would assign an operational owner and a review trigger. Better placement does not help if the information is stale.
 
+## Education adds a second decision context
+
+My international-education work at IMPACT gives me another context for asking where evidence belongs. That experience is separate from this apparel review; I did not run the same 16-criterion study on school websites.
+
+A parent comparing schools may need to distinguish the curriculum offered, the age or grade it applies to, admissions requirements and the available route to an enquiry or visit. A reassuring statement about support does not establish how a particular child's needs will be assessed.
+
+I would place verified curriculum and pathway information near the relevant comparison, and the applicable entry conditions near the admissions decision. If an external authorization supports a claim, I would make its scope clear rather than imply it covers every programme or age group.
+
+An admissions statement also needs an owner and a date. Entry-year availability, assessment steps and deadlines can change. A general marketing page should not be treated as a guarantee of a place.
+
+This is the same evidence-placement question from a different professional setting: what does the person need to verify at this stage, and which source can actually establish it? It does not require copying the entire institutional story onto every page.
+
+My [IMPACT case study](/case-studies/international-lead-growth) describes the executed international SEO work. The [ISKL campaign concept](/case-studies/iskl-admissions-concept) is a separate proposed journey with landing-page mockups, not evidence of an implemented admissions campaign or additional results.
+
 ## What I would measure after making a change
 
 This study did not test conversion improvements or citation gains. If I changed a page based on the review, I would design a separate evaluation.

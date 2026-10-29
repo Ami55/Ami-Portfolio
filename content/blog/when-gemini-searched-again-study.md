@@ -132,6 +132,22 @@ This is where content and operations meet. A polished explanation cannot compens
 
 I would test representative conversations, record the source set at each stage, and look for repeated unresolved questions. Only then would I decide whether the gap requires clearer copy, better internal links, verified product attributes or a live data connection.
 
+## A worked shore-excursion journey
+
+Here is how I would turn that application into a brief. The following sequence is hypothetical; it was not one of the outdoor-gear conversations I measured.
+
+The opening request is “Find a private tour that fits my cruise stop.” I would first clarify the port, date, party and actual time available ashore. A destination name alone cannot establish the usable window.
+
+The next question is “Which one involves less walking?” The useful evidence now concerns the route, approximate walking distance, gradients, steps, standing time and transport. I would not let “private” or “customizable” stand in for those details. The itinerary page should identify what is known and what requires operator confirmation.
+
+Then the traveller asks, “Will we be back before boarding closes?” That requires the confirmed boarding deadline, the tour's return point and time, transfer assumptions and a suitable contingency discussion. I would not generate a universal safety buffer and present it as the operator's guarantee.
+
+Finally, “Can I book it?” requires a dated departure, party eligibility, current price and availability. A guide can explain the decision; a live booking response must establish the offer.
+
+Each turn changes the evidence required. I would map clarification to the planning page, comparison to verified itinerary facts, constraints to departure and policy details, and action to the booking interface. These are proposed page responsibilities, not four pages I would automatically commission.
+
+The content gap is whatever prevents the next decision from being resolved. It might be missing information, a poorly scoped claim or an operational fact that nobody has verified. A longer article cannot solve all three in the same way.
+
 ## What I would change in the next experiment
 
 This was a small exploratory study: three topics, two runs per conversation, one model configuration and one evening of testing.

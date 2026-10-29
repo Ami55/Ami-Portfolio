@@ -146,6 +146,20 @@ The final brief would describe what the reader needs to resolve and what evidenc
 
 For a travel business, this could mean distinguishing destination discovery from selection under a budget, date or mobility constraint. That is a proposed application, not a result established by this outdoor-gear experiment.
 
+## A worked example: turning several runs into a smaller brief
+
+For the under-$300 jacket question, I would preserve the reported strings first, then classify them without discarding the originals. This is a proposed analysis workflow, not an additional result from the study.
+
+One cluster might concern the suitability of a waterproof shell for hiking. Another might concern the current Canadian price of a named model. A third might concern local availability or purchasing conditions. Queries about individual products could belong to more than one cluster, so I would document the coding rule rather than force every string into one box.
+
+For each cluster, I would record how many completed answers contained it, rather than counting every wording variant as a separate vote. With three answers, the count remains descriptive; it is not a stable demand estimate.
+
+Next, I would map the evidence to the existing site. A buying guide can explain construction and trade-offs. A product page should establish the exact model and variant. Inventory or checkout information may be needed for current price and delivery. If the guide already answers the general question, I would improve the connection to the product facts before adding another overlapping guide.
+
+The final brief would contain the decision, the required evidence, the responsible page and the unresolved fact owner. The raw query log would remain an appendix. An occasional branch would be marked for validation against customer questions or search data.
+
+This is how several noisy runs can produce a more focused assignment. The output is not 14 new headings because the sample contained 14 distinct strings. It is a small set of evidence needs, with the uncertainty preserved.
+
 ## What this study cannot establish
 
 Eleven completed answers from one evening are a starting point, not a universal model of AI search.

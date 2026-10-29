@@ -92,6 +92,56 @@ I would also preserve “unknown.”
 
 If step-free access has not been verified, the graph should not turn an empty field into either “accessible” or “inaccessible.”
 
+## A worked shore-excursion graph
+
+Consider this hypothetical request: “Find a private tour that fits my cruise stop and works for someone who cannot walk far.”
+
+I would model a tour product, its itinerary, the supplying operator, a dated departure, a meeting point and the relevant port terminal as separate records. The departure would follow an itinerary, have a start time, use a confirmed language and be associated with an offer for a particular party.
+
+The itinerary would describe route conditions such as walking distance, gradients, steps and opportunities to sit. Transport inclusion would belong to the actual option being sold. A general statement that a company offers transport would not establish pickup for this booking.
+
+The port relationship also needs precision. “Near the port” is not the same as meeting at the traveller's terminal. I would attach coordinates or an unambiguous meeting description to the confirmed location, preserve the source of that information, and require verification of any transfer assumption.
+
+The ship's boarding deadline would be an input for this traveller's visit, rather than a permanent attribute of the destination. The candidate departure would need to fit the usable time window. If the information is incomplete, the system should ask a question or request confirmation instead of producing a confident suitability claim.
+
+This is a proposed data model. I have not implemented or evaluated this integration for a client.
+
+## Relationship ownership is part of the architecture
+
+The graph needs a way to resolve who can establish each relationship.
+
+Supplier operations might confirm which operator supplies a departure and where pickup occurs. The inventory system might establish the dated offer, party eligibility and available capacity. Editorial may manage the explanation while an operational owner verifies the underlying facts.
+
+For a route condition, I would record its source, verification date, applicable itinerary version and any important exception. For a cancellation deadline, I would attach the policy to the offer, record the relevant time zone and distinguish an exact cutoff from a general summary.
+
+I would not put every fact on the same review schedule. A descriptive relationship may be relatively stable; a meeting point can change; availability may need checking at request time. The relevant update trigger should follow the fact.
+
+If two sources disagree, I would preserve the conflict until an authorized owner resolves it. Silently choosing the newest-looking page can conceal a more important distinction between a general itinerary and a departure-specific arrangement.
+
+## A knowledge graph and GraphRAG do different jobs
+
+A booking graph organizes entities and relationships. GraphRAG is a retrieval and answer-generation approach over a corpus. They can interact, but implementing one does not automatically implement the other.
+
+Microsoft's [original GraphRAG research](https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/) describes extracting an entity graph from documents, generating community summaries and combining responses for broad questions about the corpus. Its reported evaluation concerns that research setup, not travel reservations or public search visibility.
+
+For a marketplace knowledge base, I might test a similar approach for a question such as “What accessibility-related information gaps recur across our itinerary documents?” That is a different task from confirming whether one departure is available next Tuesday.
+
+The second task needs authoritative, current offer data and an action interface. A generated summary of past availability is not an inventory check. I would keep booking constraints and validation outside an unsupported inference from narrative documents.
+
+Publishing relationships on a website may make information clearer, but it does not guarantee that Google or another assistant will ingest the graph or cite the page.
+
+## A small architecture I would test first
+
+I would start with a limited set of verified itineraries and their departures, not the whole marketplace.
+
+The content layer would explain the experience and link the supporting evidence. The relationship layer would preserve identifiers, scope, ownership and provenance. A current-data layer would validate changeable offer facts when needed.
+
+For a test question, I would inspect the evidence path: the proposed departure, its itinerary version, the route conditions, the relevant meeting point and the applicable offer. Every condition in the answer should be traceable to the correct record.
+
+I would then try a deliberately difficult case: an itinerary with unknown walking distance, a changed pickup point or two options with different cancellation terms. A useful system should preserve uncertainty and avoid borrowing a fact from the wrong option.
+
+That test produces more useful implementation requirements than a large diagram of connected destinations. The graph earns its complexity by preventing a specific class of booking mistake.
+
 ## Test the graph with a traveller’s question
 
 Before investing in a complex implementation, I would choose ten realistic booking questions.
