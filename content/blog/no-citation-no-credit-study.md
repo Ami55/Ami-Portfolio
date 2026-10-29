@@ -1,13 +1,15 @@
 ---
-title: 'No Citation, No Credit? What My 18-Answer Study Could Actually Tell Me'
-status: draft
+title: No Citation, No Credit? What My 18-Answer Study Could Actually Tell Me
+status: published
 publishedDate: 2026-10-29
 metaTitle: 'AI Citation Tracking Limits: Findings from My 18-Answer Study'
-description: 'I compared six outdoor-gear questions across three AI search surfaces. The visible citation patterns changed—but they could not tell me which uncited pages had influenced an answer.'
-category: FIELD NOTES
+description: >-
+  I compared six outdoor-gear questions across three AI search surfaces. The
+  visible citation patterns changed—but they could not tell me which uncited
+  pages had influenced an answer.
+category: AI VISIBILITY
 targetQuery: what AI citation tracking can and cannot measure
 ---
-
 I called one of my studies “Absorbed, Not Credited?” because the concern is easy to recognize: a business publishes useful knowledge, an assistant gives a similar explanation, and no source link appears.
 
 But the title contains a question for a reason. Looking at an uncited answer does not let me identify the pages that influenced it. It does not establish whether a particular guide was in the model’s training data, whether retrieval occurred, or whether a source was used without a visible link.
