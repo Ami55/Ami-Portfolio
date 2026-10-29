@@ -1,13 +1,15 @@
 ---
-title: 'Proof Exists. Can the Shopper Find It? Lessons from My 15-Page Trust Review'
-status: draft
-publishedDate: 2026-10-29
+title: Proof Exists. Can the Shopper Find It? Lessons from My 15-Page Trust Review
+status: published
+publishedDate: 2026-10-27
 metaTitle: 'Product-Page Trust Evidence: My 15-Page Apparel Review'
-description: 'I reviewed five pages each from three apparel brands. The useful finding was not a winner’s score: it was the distance between a brand’s strongest evidence and the page where a shopper needed it.'
-category: FIELD NOTES
+description: >-
+  I reviewed five pages each from three apparel brands. The useful finding was
+  not a winner’s score: it was the distance between a brand’s strongest evidence
+  and the page where a shopper needed it.
+category: AI VISIBILITY
 targetQuery: product page trust evidence audit
 ---
-
 One of the questions I brought to my apparel trust review was whether a larger business would consistently show stronger evidence of trust.
 
 The result was less tidy. Different brands showed different strengths. A larger site could have more developed returns and warranty information while a smaller business made the people behind its work more visible. Useful evidence could also sit on an About page without following the shopper to the product page.
