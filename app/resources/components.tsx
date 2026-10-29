@@ -1,3 +1,4 @@
+import { SiteNavigation } from "../site-navigation";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { getResources, type Resource, type ResourceKind } from "@/lib/resources";
@@ -9,7 +10,7 @@ export const labels = { research: "Research", workbooks: "Workbooks", apps: "Too
 export function ResourceShell({ kind, children }: { kind: ResourceKind | "apps"; children: ReactNode }) {
   return <div className={s.shell}><header className={s.header}>
     <Link className={s.logo} href="/">SEO<span>Girl</span></Link>
-    <nav className={s.nav} aria-label="Main navigation">{[["/", "Portfolio"], ["/case-studies", "Case studies"], ["/research", "Research"], ["/workbooks", "Workbooks"], ["/apps", "Tools"], ["/blog", "Insights"], ["/about", "About"]].map(([href, label]) => <Link key={href} href={href} aria-current={href === `/${kind}` ? "page" : undefined}>{label}</Link>)}</nav>
+    <SiteNavigation />
   </header><main className={s.wrap}>{children}</main><SiteFooter /></div>;
 }
 export function ResourceCard({ entry, kind }: { entry: Resource; kind: ResourceKind }) {
@@ -37,4 +38,5 @@ export function ResourceDetail({ entry, kind }: { entry: Resource; kind: Resourc
     <section className={s.crossLink}><h2>Keep exploring.</h2><Link href={`/${kind}`}>All {labels[kind].toLowerCase()}</Link><Link href={kind === "research" ? "/workbooks" : "/research"}>{kind === "research" ? "Practical workbooks" : "Independent research"}</Link></section>
   </ResourceShell>;
 }
+
 
