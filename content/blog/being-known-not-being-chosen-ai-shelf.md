@@ -1,13 +1,15 @@
 ---
 title: 'Being Known Is Not Being Chosen: What My AI Shelf Studies Revealed'
-status: draft
+status: published
 publishedDate: 2026-10-29
 metaTitle: 'AI Brand Discovery vs Customer-Need Visibility: My Study'
-description: 'Comparing my apparel and skincare studies showed why appearing in a category list is different from being recommended for a customer’s specific need—and why one visibility score can hide that gap.'
-category: FIELD NOTES
+description: >-
+  Comparing my apparel and skincare studies showed why appearing in a category
+  list is different from being recommended for a customer’s specific need—and
+  why one visibility score can hide that gap.
+category: AI VISIBILITY
 targetQuery: AI brand discovery versus customer need visibility
 ---
-
 A brand can appear when an assistant is asked to name Canadian companies and disappear when the question describes what someone actually needs.
 
 That was one of the most useful observations from my AI Shelf research. The same category can produce different shortlists depending on whether the question asks for an identity, a product type or a specific use case.
