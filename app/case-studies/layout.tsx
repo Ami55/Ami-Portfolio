@@ -1,3 +1,4 @@
+import { SiteLogo } from "../site-logo";
 import { SiteNavigation } from "../site-navigation";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -8,7 +9,7 @@ export default function CaseStudiesLayout({ children }: { children: ReactNode })
   return (
     <div className={s.shell}>
       <header className={s.wrap + " " + s.topBar}>
-        <Link className={s.brand} href="/">SEO<span>Girl</span></Link>
+        <Link className={s.brand} href="/"><SiteLogo /></Link>
         <SiteNavigation />
       </header>
       {children}
