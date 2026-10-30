@@ -1,3 +1,4 @@
+import { SiteLogo } from "../site-logo";
 import { SiteFooter } from "../resources/site-footer";
 import { SiteNavigation } from "../site-navigation";
 import Link from "next/link";
@@ -9,7 +10,7 @@ export const metadata={title:"SEO App Library; Ami Saeednia",description:"A grow
 
 export default function AppsPage(){return <main>
   <header className="nav wrap">
-    <Link className="logo" href="/">SEO<span>Girl</span></Link>
+    <Link className="logo" href="/"><SiteLogo /></Link>
     <SiteNavigation />
   </header>
   <section className="libraryHero wrap">
