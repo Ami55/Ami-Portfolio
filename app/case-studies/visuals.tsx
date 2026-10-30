@@ -10,7 +10,7 @@ export function RecoveryVisual() {
         <circle cx="335" cy="130" r="108" stroke="currentColor" opacity=".2" />
         <circle cx="335" cy="130" r="77" stroke="currentColor" opacity=".16" />
         <circle cx="335" cy="130" r="46" stroke="currentColor" opacity=".12" />
-        <circle cx="260" cy="52" r="5" fill="#8ff0ce" />
+        <circle cx="260" cy="52" r="5" fill="var(--mint)" />
         <circle cx="335" cy="207" r="4" fill="#a49aff" />
       </svg>
       <span className={s.recoveryEyebrow}>ORGANIC RECOVERY</span>
@@ -40,3 +40,4 @@ export function JourneyVisual() {
     </div>
   );
 }
+
