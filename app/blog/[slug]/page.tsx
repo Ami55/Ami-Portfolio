@@ -1,3 +1,4 @@
+import { SiteLogo } from "../../site-logo";
 import { SiteFooter } from "../../resources/site-footer";
 import { SiteNavigation } from "../../site-navigation";
 import Markdoc from "@markdoc/markdoc";
@@ -41,7 +42,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const faqSchema = faqs.length ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) } : null;
   const tocHeadings = post.headings.filter((heading) => heading.text !== "Frequently Asked Questions").concat(faqs.length ? [{ id: "faq", text: "Frequently asked questions" }] : []);
   return <><main>
-    <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><SiteNavigation /></header>
+    <header className="nav wrap"><Link className="logo" href="/"><SiteLogo /></Link><SiteNavigation /></header>
     <article className="articlePage">
       <header className="articleHero wrap">
         <div className="articleHeroKicker"><Link href="/blog"> All insights</Link><span className="articleCategory">{post.category}</span></div>
@@ -68,4 +69,3 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <SiteFooter variant="full" />
   </>;
 }
-
