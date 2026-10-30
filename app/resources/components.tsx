@@ -1,3 +1,4 @@
+import { SiteLogo } from "../site-logo";
 import { SiteNavigation } from "../site-navigation";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -9,7 +10,7 @@ import { SiteFooter } from "./site-footer";
 export const labels = { research: "Research", workbooks: "Workbooks", apps: "Tools" };
 export function ResourceShell({ kind, children }: { kind: ResourceKind | "apps"; children: ReactNode }) {
   return <div className={s.shell}><header className={s.header}>
-    <Link className={s.logo} href="/">SEO<span>Girl</span></Link>
+    <Link className={s.logo} href="/"><SiteLogo /></Link>
     <SiteNavigation />
   </header><main className={s.wrap}>{children}</main><SiteFooter /></div>;
 }

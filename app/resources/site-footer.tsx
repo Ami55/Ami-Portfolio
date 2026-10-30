@@ -1,3 +1,4 @@
+import { SiteLogo } from "../site-logo";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import s from "./site-footer.module.css";
@@ -9,7 +10,7 @@ export function SiteFooter({ variant = "compact", heading }: { variant?: "full" 
     <div className={s.inner}>
       <div className={s.top}>
         <div className={s.identity}>
-          {variant === "full" ? <><p className={s.eyebrow}>AMI SAEEDNIA · SEO STRATEGIST</p><h2>{heading || <>Let’s build something<br />search can understand.</>}</h2></> : <><Link href="/" className={s.brand} aria-label="SEO Girl home">SEO<span>Girl</span></Link><p>Search strategy, made practical.</p></>}
+          {variant === "full" ? <><p className={s.eyebrow}>AMI SAEEDNIA · SEO STRATEGIST</p><h2>{heading || <>Let’s build something<br />search can understand.</>}</h2></> : <><Link href="/" className={s.brand} aria-label="SEO Girl home"><SiteLogo dark /></Link><p>Search strategy, made practical.</p></>}
         </div>
         <nav aria-label="Contact and social links" className={s.socials}>
           <a href="mailto:ameneh.saeednia@gmail.com" aria-label="Email Ami Saeednia" title="Email Ami Saeednia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 6 9 7 9-7" /></svg><span>Email</span></a>
