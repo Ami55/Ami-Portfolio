@@ -1,3 +1,4 @@
+import { SiteLogo } from "../site-logo";
 import { SiteFooter } from "../resources/site-footer";
 import { SiteNavigation } from "../site-navigation";
 import { blogSchema, serializeSchema } from "@/lib/schema";
@@ -13,7 +14,7 @@ export default function BlogPage() {
   const featured = posts.find((post) => post.slug === "query-fan-out-explained") || posts[0];
   const articles = posts.filter((post) => post.slug !== featured?.slug);
   return <main><script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeSchema(blogSchema)}}/>
-    <header className="nav wrap"><Link className="logo" href="/">SEO<span>Girl</span></Link><SiteNavigation /></header>
+    <header className="nav wrap"><Link className="logo" href="/"><SiteLogo /></Link><SiteNavigation /></header>
     <section className="blogHero wrap"><div><span className="status"><i/> SEO STRATEGY × PRACTICAL RESEARCH</span><h1>Search thinking,<br/><em>made useful.</em></h1></div><p>Field notes on entity SEO, natural language processing, AI visibility, E-E-A-T, semantic systems, and the decisions behind sustainable search growth.</p></section>
     {featured && <section className="featuredArticle wrap"><div className="featureVisual" aria-hidden="true"><span>{String(featured.number).padStart(2,"0")}</span><Sparkles size={46}/><b>AI</b><div className="signalLines"><i/><i/><i/></div></div><article><span className="articleCategory">{featured.category}</span><h2>{featured.title}</h2><p>{featured.description}</p><div className="articleMeta"><span>{featured.date}</span><span><Clock3 size={14}/>{readingTime(featured)}</span></div><Link href={`/blog/${featured.slug}`}>Read the article </Link></article></section>}
     <section className="blogIndex wrap"><div className="blogToolbar"><div><span className="mini">{posts.length} PUBLISHED INSIGHTS</span><h2>Ideas you can act on.</h2></div><div className="topicPills"><span>Entity SEO</span><span>NLP</span><span>AI visibility</span><span>E-E-A-T</span></div></div>
