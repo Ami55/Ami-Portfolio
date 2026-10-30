@@ -250,3 +250,5 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
 
 /* Supporting source links remain secondary to app launches and contact actions. */
 .cardFoot>.appSource{color:var(--muted);font-size:11px}.footerLinks>.githubLink{font-size:12px;color:#919db7}
+/* Homepage badge keeps lavender text with the shared mint accent dot. */
+.hero .status i{background:var(--mint);box-shadow:0 0 12px var(--mint)}
